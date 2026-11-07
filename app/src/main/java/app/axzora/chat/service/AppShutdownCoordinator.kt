@@ -6,6 +6,8 @@ import androidx.core.app.NotificationManagerCompat
 import app.axzora.chat.mesh.BluetoothMeshService
 import app.axzora.chat.net.ArtiTorManager
 import app.axzora.chat.net.TorMode
+import app.axzora.chat.services.AppStateStore
+import app.axzora.chat.util.AppConstants
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -49,9 +51,9 @@ object AppShutdownCoordinator {
         val job = scope.launch {
             // Signal UI to finish gracefully before we kill the process
             try {
-                val intent = android.content.Intent(app.axzora.chat.util.AppConstants.UI.ACTION_FORCE_FINISH)
+                val intent = android.content.Intent(AppConstants.UI.ACTION_FORCE_FINISH)
                     .setPackage(app.packageName)
-                app.sendBroadcast(intent, app.axzora.chat.util.AppConstants.UI.PERMISSION_FORCE_FINISH)
+                app.sendBroadcast(intent, AppConstants.UI.PERMISSION_FORCE_FINISH)
             } catch (_: Exception) { }
 
             // Stop mesh (best-effort)
@@ -64,7 +66,7 @@ object AppShutdownCoordinator {
             }
 
             // Clear AppState in-memory store
-            try { app.axzora.chat.services.AppStateStore.clear() } catch (_: Exception) { }
+            try { AppStateStore.clear() } catch (_: Exception) { }
 
             // Stop foreground and clear notification
             try { stopForeground() } catch (_: Exception) { }

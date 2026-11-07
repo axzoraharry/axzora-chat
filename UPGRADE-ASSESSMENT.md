@@ -1,6 +1,7 @@
-# Axzora Chat — Upgrade Assessment
+# Axzora Chat — Upgrade Assessment & Rebrand Log
 
 _Generated 7 Nov 2026, on-device (Axzora Coder Linux sandbox)._
+_Updated after the rebrand was applied and pushed to `axzoraharry/axzora-chat`._
 
 ## TL;DR
 - **Axzora Chat** (`app.axzora.chat`, installed **v1.0.15 / code 15**) is a rebrand of
@@ -59,15 +60,34 @@ impl + `info.guardianproject` (Tor/Arti) + `org` (helpers). `golib.aar` (21 MB) 
 Result: **BUILD SUCCESSFUL in 6m47s** → `app-arm64-v8a-debug.apk` (88,411,105 B,
 sha256 161f14bc…) and `app-universal-debug.apk` (120,557,745 B).
 
-## Upgrade path (recommended)
-1. **Sync from `whisperbit-labs/zemzeme-android` `main`** (MIT) — not bitchat-android.
-2. Re-apply the Axzora rebrand on top: `namespace = "app.axzora.chat"`, app name/icon,
-   versionCode 16 / versionName 1.0.16 (or jump to match upstream 2.x if desired).
-3. Bump the four upgrade-sensitive bits only if needed: nothing in `libs.versions.toml`
-   is stale (AGP 8.10.1 / Kotlin 2.2.0 / SDK 35 are current).
-4. Sign with the Axzora release key (upstream reads `KEYSTORE_*` from `local.properties`).
-5. Distribute via the existing Play-Core in-app-update path, or wire it into the AxzoraOS
-   OTA hub (`:8800` → `/update/*`) if you want the same update channel as AxzoraOS.
+## Rebrand — DONE (commit `8cb09ab`, pushed to `axzoraharry/axzora-chat` `main`)
+1. ✅ Private repo **`github.com/axzoraharry/axzora-chat`** created; `origin` → axzora-chat,
+   `upstream` → whisperbit-labs/zemzeme-android (MIT). Full history unshallowed (145 commits).
+2. ✅ Package renamed **`com.roman.zemzeme` → `app.axzora.chat`** everywhere (namespace,
+   applicationId, 216 Kotlin/Java files moved, manifest permissions/actions/authorities,
+   IconSwitcher `PACKAGE` const). `southernstorm` / `guardianproject` / `torproject` vendored
+   libs untouched.
+3. ✅ App name **"Zemzeme" → "Axzora Chat"** in every locale (`app_name` + all user-facing
+   strings). Internal identifiers (`ZemzemeApplication`, `Theme.ZemzemeAndroid`,
+   `zemzeme://verify` deep-link) left unchanged — they are invisible and internally consistent.
+4. ✅ Version **1.0.2/3 → 1.0.16/10016**. `versionCode` follows the semantic scheme used by
+   `UpdateManager.parseSemanticVersionCode` (`major*10000+minor*100+patch`), so the in-app
+   update check compares correctly and won't loop.
+5. ✅ Self-updater repointed: `AppConstants.Update.GITHUB_OWNER/REPO` →
+   `axzoraharry/axzora-chat`; debug "Source" line updated too.
+6. ✅ Release signing wired via `local.properties` (`KEYSTORE_PATH/PASSWORD/KEY_ALIAS/KEY_PASSWORD`
+   → the Axzora release keystore). `local.properties` is gitignored.
+
+### ⚠️ Signing-key mismatch (blocking in-place install)
+The **installed** `app.axzora.chat` v1.0.15 was built on the user's laptop with the
+**Android Debug key** (SHA-256 `7a96dbd1…`), NOT the Axzora release key (`F9276561…0456`).
+An APK signed with the Axzora key will be **rejected with a signature mismatch** when
+installed over it. Options: (a) provide the laptop debug keystore, or (b) uninstall
+v1.0.15 (loses local chat data) and reinstall signed with the Axzora key. See final note.
+
+## Dependencies
+Nothing in `libs.versions.toml` is stale — AGP 8.10.1, Kotlin 2.2.0, compileSdk 35 are all
+current as of Nov 2026. The "upgrade" here is the rebrand + OTA repoint, not a dep bump.
 
 ## License
 - zemzeme-android: **MIT** (permissive) → Axzora Chat can stay MIT and is safe to extend
