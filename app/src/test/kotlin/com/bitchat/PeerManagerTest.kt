@@ -1,6 +1,6 @@
 package com.zemzeme
 
-import com.roman.zemzeme.mesh.PeerManager
+import app.axzora.chat.mesh.PeerManager
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
 

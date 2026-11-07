@@ -1,8 +1,8 @@
-package com.roman.zemzeme.mesh
+package app.axzora.chat.mesh
 
-import com.roman.zemzeme.protocol.ZemzemePacket
-import com.roman.zemzeme.protocol.MessageType
-import com.roman.zemzeme.model.FragmentPayload
+import app.axzora.chat.protocol.ZemzemePacket
+import app.axzora.chat.protocol.MessageType
+import app.axzora.chat.model.FragmentPayload
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue

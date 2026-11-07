@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Zemzeme</string>
+    <string name="app_name">Axzora Chat</string>
 
     <!-- Ly do quyen -->
     <string name="permission_bluetooth_rationale">Quyen Bluetooth la can thiet de tro chuyen truc tiep voi nhung nguoi khac ma khong can Internet.</string>
@@ -29,12 +29,12 @@
     <string name="battery_optimization_not_required">Khong can toi uu hoa pin</string>
     <string name="battery_optimization_checking">Dang kiem tra toi uu hoa pin</string>
     <string name="battery_optimization_why_disable">Tai sao nen tat toi uu hoa pin?</string>
-    <string name="battery_optimization_explanation">Zemzeme chay nen de duy tri ket noi mesh voi cac thiet bi gan do. Toi uu hoa pin co the lam gian doan cac ket noi nay, gay ra tin nhan bi tre hoac mat.\n\nTat toi uu hoa pin dam bao lien lac ngang hang dang tin cay.</string>
+    <string name="battery_optimization_explanation">Axzora Chat chay nen de duy tri ket noi mesh voi cac thiet bi gan do. Toi uu hoa pin co the lam gian doan cac ket noi nay, gay ra tin nhan bi tre hoac mat.\n\nTat toi uu hoa pin dam bao lien lac ngang hang dang tin cay.</string>
     <string name="battery_optimization_disable_button">Tat toi uu hoa pin</string>
-    <string name="battery_optimization_note">Luu y: Ban co the thay doi dieu nay sau trong Android Settings &gt; Apps &gt; Zemzeme &gt; Battery.</string>
-    <string name="battery_optimization_not_supported_explanation">Thiet bi cua ban khong can cai dat toi uu hoa pin. Zemzeme se chay binh thuong.</string>
-    <string name="battery_optimization_not_supported_message">Thiet bi cua ban khong can cai dat toi uu hoa pin. Zemzeme se chay binh thuong.</string>
-    <string name="battery_optimization_success_message">Zemzeme co the chay dang tin cay trong nen</string>
+    <string name="battery_optimization_note">Luu y: Ban co the thay doi dieu nay sau trong Android Settings &gt; Apps &gt; Axzora Chat &gt; Battery.</string>
+    <string name="battery_optimization_not_supported_explanation">Thiet bi cua ban khong can cai dat toi uu hoa pin. Axzora Chat se chay binh thuong.</string>
+    <string name="battery_optimization_not_supported_message">Thiet bi cua ban khong can cai dat toi uu hoa pin. Axzora Chat se chay binh thuong.</string>
+    <string name="battery_optimization_success_message">Axzora Chat co the chay dang tin cay trong nen</string>
     <string name="battery_optimization_benefits">• Gui tin nhan dang tin cay\n• Duy tri ket noi mesh\n• Chuyen tiep tin nhan nen\n• Ngan ngua mat ket noi</string>
     <string name="battery_optimization_check_again">Kiem tra lai</string>
     <string name="battery_optimization_skip">Bo qua ngay</string>
@@ -46,7 +46,7 @@
     <string name="notification_summary_more">va %1$d khac</string>
     <string name="notification_messages_from_people">%1$d tin nhan tu %2$d nguoi</string>
     <string name="notification_more_conversations">va %1$d cuoc tro chuyen khac</string>
-    <string name="notification_active_peers_title">👥 Zemzeme user gan do!</string>
+    <string name="notification_active_peers_title">👥 Axzora Chat user gan do!</string>
     <string name="notification_active_peers_one">1 nguoi gan do</string>
     <string name="notification_active_peers_many">%1$d nguoi gan do</string>
     <string name="notification_new_messages">Tin nhan moi</string>
@@ -57,8 +57,8 @@
     <string name="notification_new_activity_in">Hoat dong moi trong %1$s</string>
     <string name="notification_messages_in">Tin nhan trong %1$s</string>
     <string name="notification_joined_conversation">%1$s da tham gia cuoc tro chuyen</string>
-    <string name="notification_geohash_summary_title_mentions">Zemzeme – %1$d lan nhac den</string>
-    <string name="notification_geohash_summary_title">Zemzeme – Tro chuyen vi tri</string>
+    <string name="notification_geohash_summary_title_mentions">Axzora Chat – %1$d lan nhac den</string>
+    <string name="notification_geohash_summary_title">Axzora Chat – Tro chuyen vi tri</string>
     <string name="notification_geohash_summary_text">%1$d tin nhan tu %2$d vi tri</string>
     <string name="notification_mesh_mention_title_singular">Duoc nhac den trong Bluetooth Chat</string>
     <string name="notification_mesh_mention_title_plural">%1$d lan nhac den trong Bluetooth Chat</string>
@@ -253,24 +253,24 @@
     <!-- Man hinh onboarding -->
     <string name="location_services_required">Yeu cau dich vu vi tri</string>
     <string name="privacy_first">Quyen rieng tu truoc tien</string>
-    <string name="location_explanation">Zemzeme KHONG theo doi vi tri cua ban.\n\nDich vu vi tri can thiet cho quet Bluetooth va tinh nang geohash chat.</string>
-    <string name="location_needs_for">Zemzeme can dich vu vi tri cho:</string>
+    <string name="location_explanation">Axzora Chat KHONG theo doi vi tri cua ban.\n\nDich vu vi tri can thiet cho quet Bluetooth va tinh nang geohash chat.</string>
+    <string name="location_needs_for">Axzora Chat can dich vu vi tri cho:</string>
     <string name="location_needs_bullets">• Quet thiet bi Bluetooth\n• Kham pha nguoi dung gan do trong mang mesh\n• Tinh nang geohash chat\n• Khong theo doi hoac thu thap vi tri</string>
     <string name="open_location_settings">Mo cai dat vi tri</string>
     <string name="check_again">Kiem tra lai</string>
     <string name="location_services_unavailable">Dich vu vi tri khong co san</string>
-    <string name="location_unavailable_explanation">Dich vu vi tri khong co san tren thiet bi nay. Dieu nay bat thuong vi dich vu vi tri la tieu chuan tren thiet bi Android.\n\nZemzeme can dich vu vi tri de quet Bluetooth hoat dong dung (yeu cau Android). Khong co no, ung dung khong the kham pha nguoi dung gan do.</string>
+    <string name="location_unavailable_explanation">Dich vu vi tri khong co san tren thiet bi nay. Dieu nay bat thuong vi dich vu vi tri la tieu chuan tren thiet bi Android.\n\nAxzora Chat can dich vu vi tri de quet Bluetooth hoat dong dung (yeu cau Android). Khong co no, ung dung khong the kham pha nguoi dung gan do.</string>
     <string name="checking_location_services">Dang kiem tra dich vu vi tri …</string>
     <string name="bluetooth_required">Yeu cau Bluetooth</string>
-    <string name="bluetooth_needs_for">Zemzeme can Bluetooth cho:</string>
+    <string name="bluetooth_needs_for">Axzora Chat can Bluetooth cho:</string>
     <string name="bluetooth_needs_bullets">• Kham pha nguoi dung gan do\n• Tao ket noi mang mesh\n• Gui va nhan tin nhan\n• Hoat dong ma khong can Internet hoac may chu</string>
     <string name="enable_bluetooth">Bat Bluetooth</string>
     <string name="bluetooth_not_supported">Bluetooth khong duoc ho tro</string>
-    <string name="bluetooth_unsupported_explanation">Thiet bi nay khong ho tro Bluetooth Low Energy (BLE), can thiet de Zemzeme hoat dong.\n\nZemzeme can BLE de tao mang mesh va lien lac voi thiet bi gan do ma khong can Internet.</string>
+    <string name="bluetooth_unsupported_explanation">Thiet bi nay khong ho tro Bluetooth Low Energy (BLE), can thiet de Axzora Chat hoat dong.\n\nAxzora Chat can BLE de tao mang mesh va lien lac voi thiet bi gan do ma khong can Internet.</string>
     <string name="checking_bluetooth_status">Dang kiem tra trang thai Bluetooth …</string>
     <string name="battery_optimization_detected_title">Da phat hien toi uu hoa pin</string>
     <string name="battery_optimization_enabled_title">Toi uu hoa pin da bat</string>
-    <string name="battery_optimization_explanation_short">Zemzeme phai chay nen de duy tri ket noi mesh. Toi uu hoa pin co the lam gian doan cac ket noi nay.</string>
+    <string name="battery_optimization_explanation_short">Axzora Chat phai chay nen de duy tri ket noi mesh. Toi uu hoa pin co the lam gian doan cac ket noi nay.</string>
     <string name="benefits_of_disabling">Loi ich cua viec tat</string>
     <string name="battery_benefits_short">• gui tin nhan dang tin cay\n• duy tri ket noi mesh\n• ngan ngua mat ket noi</string>
     <string name="disable_battery_optimization">Tat toi uu hoa pin</string>
@@ -285,7 +285,7 @@
     <string name="privacy_bullets">• khong theo doi hoac thu thap du lieu\n• Bluetooth mesh chat hoan toan ngoai tuyen\n• Geohash chat su dung Internet</string>
     <string name="permissions_header">Quyen</string>
     <string name="grant_permissions">Cap quyen</string>
-    <string name="location_tracking_warning">Zemzeme KHONG theo doi vi tri cua ban</string>
+    <string name="location_tracking_warning">Axzora Chat KHONG theo doi vi tri cua ban</string>
     <string name="geohash_people_header">MOI NGUOI</string>
     <string name="nobody_around">khong co ai xung quanh …</string>
     <string name="you_suffix"> (ban)</string>
@@ -314,14 +314,14 @@
     <string name="pow_label_format">pow: %1$dbit</string>
 
     <!-- Mo ta quyen -->
-    <string name="perm_nearby_devices_desc">Can thiet de kham pha nguoi dung Zemzeme qua Bluetooth</string>
-    <string name="perm_nearby_devices_system">Cho phep Zemzeme ket noi voi thiet bi gan do</string>
-    <string name="perm_location_desc">Android yeu cau de kham pha nguoi dung Zemzeme gan do qua Bluetooth</string>
-    <string name="perm_location_system">Zemzeme can dieu nay de quet thiet bi gan do</string>
+    <string name="perm_nearby_devices_desc">Can thiet de kham pha nguoi dung Axzora Chat qua Bluetooth</string>
+    <string name="perm_nearby_devices_system">Cho phep Axzora Chat ket noi voi thiet bi gan do</string>
+    <string name="perm_location_desc">Android yeu cau de kham pha nguoi dung Axzora Chat gan do qua Bluetooth</string>
+    <string name="perm_location_system">Axzora Chat can dieu nay de quet thiet bi gan do</string>
     <string name="perm_notifications_desc">Nhan thong bao khi ban nhan tin nhan rieng</string>
-    <string name="perm_notifications_system">Cho phep Zemzeme gui thong bao cho ban</string>
-    <string name="perm_battery_desc">Tat toi uu hoa pin de dam bao Zemzeme chay dang tin cay trong nen va duy tri ket noi mang mesh</string>
-    <string name="perm_battery_system">Cho phep Zemzeme chay ma khong bi gioi han pin</string>
+    <string name="perm_notifications_system">Cho phep Axzora Chat gui thong bao cho ban</string>
+    <string name="perm_battery_desc">Tat toi uu hoa pin de dam bao Axzora Chat chay dang tin cay trong nen va duy tri ket noi mang mesh</string>
+    <string name="perm_battery_system">Cho phep Axzora Chat chay ma khong bi gioi han pin</string>
 
     <!-- Loai quyen -->
     <string name="perm_type_nearby_devices">Thiet bi gan do</string>
@@ -397,7 +397,7 @@
     <string name="cd_location_notes">Ghi chu vi tri</string>
 
     <!-- Hanh dong thong bao -->
-    <string name="notification_action_quit_bitchat">Thoat Zemzeme</string>
+    <string name="notification_action_quit_bitchat">Thoat Axzora Chat</string>
 
     <!-- Gioi thieu -->
     <string name="about_background_title">chay nen</string>
@@ -431,9 +431,9 @@
     <!-- Vi tri nen -->
     <string name="background_location_required_title">Khuyen nghi vi tri nen</string>
     <string name="background_location_required_subtitle">tuy chon, cai thien do tin cay mesh</string>
-    <string name="background_location_explanation">Android khuyen nghi vi tri nen de Zemzeme co the quet thiet bi gan do khi ung dung khong mo. Dieu nay giu cho mesh hoat dong sau khi khoi dong lai.</string>
+    <string name="background_location_explanation">Android khuyen nghi vi tri nen de Axzora Chat co the quet thiet bi gan do khi ung dung khong mo. Dieu nay giu cho mesh hoat dong sau khi khoi dong lai.</string>
     <string name="background_location_settings_tip">Khi cai dat mo, chon \"Cho phep moi luc\".</string>
-    <string name="background_location_needs_for">Zemzeme su dung vi tri nen cho:</string>
+    <string name="background_location_needs_for">Axzora Chat su dung vi tri nen cho:</string>
     <string name="background_location_needs_bullets">- quet thiet bi gan do khi ung dung dong\n- ket noi lai sau khi khoi dong lai\n- giu mesh chay trong nen</string>
     <string name="background_location_privacy_note">Chung toi KHONG BAO GIO thu thap hoac luu tru vi tri cua ban. Quyen rieng tu cua ban duoc bao ve.</string>
     <string name="grant_background_location">Cho phep vi tri nen</string>
@@ -443,7 +443,7 @@
     <string name="dot">.</string>
     <string name="warning_emoji">⚠️</string>
     <string name="at_symbol">@</string>
-    <string name="app_brand">Zemzeme/</string>
+    <string name="app_brand">Axzora Chat/</string>
     <string name="channel_count_prefix"> · ⧉ </string>
     <string name="mention_suggestion_at">@%1$s</string>
     <string name="image_counter">%1$d / %2$d</string>
@@ -504,7 +504,7 @@
     <string name="app_lock_enter_pin">Nhap PIN</string>
     <string name="app_lock_set_pin">Dat PIN</string>
     <string name="app_lock_confirm_pin">Xac nhan PIN</string>
-    <string name="app_lock_biometric_title">Mo khoa Zemzeme</string>
+    <string name="app_lock_biometric_title">Mo khoa Axzora Chat</string>
     <string name="app_lock_biometric_subtitle">Dung sinh trac hoc de mo khoa</string>
     <string name="app_lock_use_pin">Dung PIN</string>
     <string name="app_lock_wrong_pin">PIN sai</string>
@@ -524,11 +524,11 @@
     <string name="perm_required_label">Bat buoc</string>
     <string name="perm_recommended_label">Khuyen nghi</string>
     <string name="perm_info_dialog_ok">OK</string>
-    <string name="perm_benefit_nearby_devices">Quyen Bluetooth cho phep Zemzeme kham pha va giao tiep voi nhung nguoi dung khac gan do qua mang mesh. Dieu nay cho phep nhan tin ngang hang hoan toan ngoai tuyen ma khong can ket noi Internet.</string>
-    <string name="perm_benefit_location">Android yeu cau quyen vi tri de quet thiet bi Bluetooth gan do. Zemzeme KHONG theo doi hoac luu tru vi tri cua ban.</string>
-    <string name="perm_benefit_background_location">Vi tri nen cho phep Zemzeme kham pha nguoi dung gan do ngay ca khi ung dung chay nen. Khong co quyen nay, mang mesh chi hoat dong khi ung dung dang mo tren man hinh.</string>
+    <string name="perm_benefit_nearby_devices">Quyen Bluetooth cho phep Axzora Chat kham pha va giao tiep voi nhung nguoi dung khac gan do qua mang mesh. Dieu nay cho phep nhan tin ngang hang hoan toan ngoai tuyen ma khong can ket noi Internet.</string>
+    <string name="perm_benefit_location">Android yeu cau quyen vi tri de quet thiet bi Bluetooth gan do. Axzora Chat KHONG theo doi hoac luu tru vi tri cua ban.</string>
+    <string name="perm_benefit_background_location">Vi tri nen cho phep Axzora Chat kham pha nguoi dung gan do ngay ca khi ung dung chay nen. Khong co quyen nay, mang mesh chi hoat dong khi ung dung dang mo tren man hinh.</string>
     <string name="perm_benefit_notifications">Thong bao cho ban biet khi ban nhan tin nhan rieng hoac khi co hoat dong moi trong cac kenh, ngay ca khi ung dung chay nen.</string>
-    <string name="perm_benefit_battery_optimization">Tat toi uu hoa pin dam bao Zemzeme chay dang tin cay trong nen va duy tri ket noi mang mesh. Khong tat, Android co the dong ung dung de tiet kiem pin va ngat ket noi mesh.</string>
+    <string name="perm_benefit_battery_optimization">Tat toi uu hoa pin dam bao Axzora Chat chay dang tin cay trong nen va duy tri ket noi mang mesh. Khong tat, Android co the dong ung dung de tiet kiem pin va ngat ket noi mesh.</string>
 
     <!-- Gioi thieu mesh -->
     <string name="mesh_intro_title">Bluetooth</string>
@@ -609,7 +609,7 @@
     <!-- P2P -->
     <string name="p2p_settings_header">CAI DAT</string>
     <string name="p2p_enable">Bat P2P</string>
-    <string name="p2p_enable_desc">Ket noi truc tiep voi cac peer Zemzeme khac</string>
+    <string name="p2p_enable_desc">Ket noi truc tiep voi cac peer Axzora Chat khac</string>
     <string name="p2p_use_default_nodes">Su dung node mac dinh</string>
     <string name="p2p_default_nodes_desc">Ket noi voi cac node bootstrap IPFS cong cong</string>
     <string name="p2p_custom_nodes_header">NODE BOOTSTRAP TUY CHINH</string>

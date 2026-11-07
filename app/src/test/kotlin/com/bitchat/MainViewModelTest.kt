@@ -1,9 +1,9 @@
 package com.zemzeme
 
-import com.roman.zemzeme.MainViewModel
-import com.roman.zemzeme.onboarding.BatteryOptimizationStatus
-import com.roman.zemzeme.onboarding.LocationStatus
-import com.roman.zemzeme.onboarding.OnboardingState
+import app.axzora.chat.MainViewModel
+import app.axzora.chat.onboarding.BatteryOptimizationStatus
+import app.axzora.chat.onboarding.LocationStatus
+import app.axzora.chat.onboarding.OnboardingState
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

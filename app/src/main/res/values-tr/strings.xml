@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Zemzeme</string>
+    <string name="app_name">Axzora Chat</string>
     <string name="permission_bluetooth_rationale">İnternetsiz eşler arası mesajlaşma için Bluetooth izni gerekir.</string>
     <string name="permission_location_rationale">Bluetooth ile yakın cihazları bulmak için konum izni gerekir.</string>
     <string name="permission_notification_rationale">Yeni mesajlarda bildirim gönderebilmek için izin gerekir.</string>
@@ -24,12 +24,12 @@
     <string name="battery_optimization_not_required">Pil optimizasyonu gerekmiyor</string>
     <string name="battery_optimization_checking">Pil optimizasyonu kontrol ediliyor</string>
     <string name="battery_optimization_why_disable">Neden devre dışı bırakmalı?</string>
-    <string name="battery_optimization_explanation">Zemzeme yakındaki cihazlarla mesh bağlantısını sürdürmek için arka planda çalışır. Pil optimizasyonu bu bağlantıları kesebilir ve mesajlar gecikebilir/ kaybolabilir.\n\nDevre dışı bırakmak güvenilir eşler arası mesajlaşmayı sağlar.</string>
+    <string name="battery_optimization_explanation">Axzora Chat yakındaki cihazlarla mesh bağlantısını sürdürmek için arka planda çalışır. Pil optimizasyonu bu bağlantıları kesebilir ve mesajlar gecikebilir/ kaybolabilir.\n\nDevre dışı bırakmak güvenilir eşler arası mesajlaşmayı sağlar.</string>
     <string name="battery_optimization_disable_button">Optimizasyonu kapat</string>
-    <string name="battery_optimization_note">Not: Daha sonra Ayarlar &gt; Uygulamalar &gt; Zemzeme &gt; Pil üzerinden değiştirebilirsin.</string>
-    <string name="battery_optimization_not_supported_explanation">Cihazının pil optimizasyonu ayarlarına ihtiyacı yok. Zemzeme normal çalışır.</string>
-    <string name="battery_optimization_not_supported_message">Cihazının pil optimizasyonu ayarlarına ihtiyacı yok. Zemzeme normal çalışır.</string>
-    <string name="battery_optimization_success_message">Zemzeme arka planda güvenle çalışabilir</string>
+    <string name="battery_optimization_note">Not: Daha sonra Ayarlar &gt; Uygulamalar &gt; Axzora Chat &gt; Pil üzerinden değiştirebilirsin.</string>
+    <string name="battery_optimization_not_supported_explanation">Cihazının pil optimizasyonu ayarlarına ihtiyacı yok. Axzora Chat normal çalışır.</string>
+    <string name="battery_optimization_not_supported_message">Cihazının pil optimizasyonu ayarlarına ihtiyacı yok. Axzora Chat normal çalışır.</string>
+    <string name="battery_optimization_success_message">Axzora Chat arka planda güvenle çalışabilir</string>
     <string name="battery_optimization_benefits">• Güvenilir mesaj teslimi\n• Mesh bağlantısını korur\n• Arka planda iletim\n• Kopmaları önler</string>
     <string name="battery_optimization_check_again">Tekrar kontrol et</string>
     <string name="battery_optimization_skip">Şimdilik atla</string>
@@ -40,7 +40,7 @@
     <string name="notification_summary_more">ve %1$d daha</string>
     <string name="notification_messages_from_people">%2$d kişiden %1$d mesaj</string>
     <string name="notification_more_conversations">ve %1$d sohbet daha</string>
-    <string name="notification_active_peers_title">👥 yakında zemzeme kullanıcıları!</string>
+    <string name="notification_active_peers_title">👥 yakında Axzora Chat kullanıcıları!</string>
     <string name="notification_active_peers_one">Yakında 1 kişi</string>
     <string name="notification_active_peers_many">Yakında %1$d kişi</string>
     <string name="notification_new_messages">Yeni mesajlar</string>
@@ -51,8 +51,8 @@
     <string name="notification_new_activity_in">%1$s içinde yeni etkinlik</string>
     <string name="notification_messages_in">%1$s içindeki mesajlar</string>
     <string name="notification_joined_conversation">%1$s sohbete katıldı</string>
-    <string name="notification_geohash_summary_title_mentions">Zemzeme – %1$d bahsetme</string>
-    <string name="notification_geohash_summary_title">Zemzeme – konum sohbetleri</string>
+    <string name="notification_geohash_summary_title_mentions">Axzora Chat – %1$d bahsetme</string>
+    <string name="notification_geohash_summary_title">Axzora Chat – konum sohbetleri</string>
     <string name="notification_geohash_summary_text">%2$d konumdan %1$d mesaj</string>
     <string name="notification_mesh_mention_title_singular">Bluetooth sohbette bahsedildi</string>
     <string name="notification_mesh_mention_title_plural">Mesh sohbette %1$d bahsetme</string>
@@ -155,7 +155,7 @@
     <string name="cd_remove_bookmark">Yer imini kaldır</string>
     <string name="cd_teleport">Teleport</string>
     <string name="cd_selected">Seçildi</string>
-    <string name="notification_action_quit_bitchat">Zemzeme\'dan Çık</string>
+    <string name="notification_action_quit_bitchat">Axzora Chat\'dan Çık</string>
     <string name="about_background_title">arka planda çalıştır</string>
     <string name="about_background_desc">uygulama kapalıyken mesh\'i aktif tut (ön plan hizmeti)</string>
     <string name="about_p2p_subtitle">p2p üzerinden doğrudan eşler arası bağlantılar</string>
@@ -335,14 +335,14 @@
 
     <string name="location_services_required">Konum servisleri gerekli</string>
     <string name="privacy_first">Önce gizlilik</string>
-    <string name="location_explanation">Zemzeme KONUMUNU takip etmez.\n\nBluetooth tarama ve Geohash sohbet için konum servisleri gerekir.</string>
-    <string name="location_needs_for">Zemzeme konum servislerini şunlar için kullanır:</string>
+    <string name="location_explanation">Axzora Chat KONUMUNU takip etmez.\n\nBluetooth tarama ve Geohash sohbet için konum servisleri gerekir.</string>
+    <string name="location_needs_for">Axzora Chat konum servislerini şunlar için kullanır:</string>
     <string name="location_needs_bullets">• Bluetooth cihaz tarama\n• Mesh ağında yakın kullanıcıları bulma\n• Geohash sohbet özelliği\n• Takip veya konum toplama yok</string>
     <string name="background_location_required_title">Arka Plan Konumu Önerilir</string>
     <string name="background_location_required_subtitle">isteğe bağlı, mesh güvenilirliğini artırır</string>
-    <string name="background_location_explanation">Android, Zemzeme\'nın uygulama açık olmadığında yakındaki cihazları tarayabilmesi için arka plan konumunu önerir. Bu, yeniden başlatmanın ardından mesh\'i canlı tutar.</string>
+    <string name="background_location_explanation">Android, Axzora Chat\'nın uygulama açık olmadığında yakındaki cihazları tarayabilmesi için arka plan konumunu önerir. Bu, yeniden başlatmanın ardından mesh\'i canlı tutar.</string>
     <string name="background_location_settings_tip">Ayarlar açıldığında, "Her zaman izin ver"i seçin.</string>
-    <string name="background_location_needs_for">Zemzeme, arka plan konumunu şunlar için kullanır:</string>
+    <string name="background_location_needs_for">Axzora Chat, arka plan konumunu şunlar için kullanır:</string>
     <string name="background_location_needs_bullets">- uygulama kapalıyken yakındaki cihazları tara\n- yeniden başlatmanın ardından yeniden bağlan\n- mesh\'i arka planda çalışır tut</string>
     <string name="background_location_privacy_note">Konumunuzu asla toplamıyor veya saklamıyoruz. Gizliliğiniz güvende.</string>
     <string name="grant_background_location">Arka Plan Konumuna İzin Ver</string>
@@ -353,11 +353,11 @@
     <string name="location_unavailable_explanation">Bu cihazda konum servisleri yok. Bu olağandışıdır.\n\nBluetooth taramasının düzgün çalışması (Android gereksinimi) için gerekir. Aksi halde yakın kullanıcılar bulunamaz.</string>
     <string name="checking_location_services">Konum servisleri kontrol ediliyor…</string>
     <string name="bluetooth_required">Bluetooth gerekli</string>
-    <string name="bluetooth_needs_for">Zemzeme Bluetooth\'u şunlar için kullanır:</string>
+    <string name="bluetooth_needs_for">Axzora Chat Bluetooth\'u şunlar için kullanır:</string>
     <string name="bluetooth_needs_bullets">• Yakın kullanıcıları bulma\n• Mesh bağlantıları kurma\n• Mesaj gönderme/alma\n• İnternetsiz çalışma</string>
     <string name="enable_bluetooth">Bluetooth\'u aç</string>
     <string name="bluetooth_not_supported">Bluetooth desteklenmiyor</string>
-    <string name="bluetooth_unsupported_explanation">Bu cihaz Bluetooth Low Energy (BLE) desteklemiyor, Zemzeme için gereklidir.\n\nBLE, internetsiz yakın cihazlarla iletişim ve mesh için gereklidir.</string>
+    <string name="bluetooth_unsupported_explanation">Bu cihaz Bluetooth Low Energy (BLE) desteklemiyor, Axzora Chat için gereklidir.\n\nBLE, internetsiz yakın cihazlarla iletişim ve mesh için gereklidir.</string>
     <string name="checking_bluetooth_status">Bluetooth durumu kontrol ediliyor…</string>
     <string name="battery_optimization_detected_title">pil optimizasyonu algılandı</string>
     <string name="battery_optimization_enabled_title">Pil optimizasyonu açık</string>
@@ -383,14 +383,14 @@
     <string name="perm_required_label">Gerekli</string>
     <string name="perm_recommended_label">Önerilen</string>
     <string name="perm_info_dialog_ok">Tamam</string>
-    <string name="perm_benefit_nearby_devices">Bluetooth izinleri, Zemzeme\'nın mesh ağı üzerinden yakınlardaki diğer kullanıcıları keşfetmesini ve iletişim kurmasını sağlar. Bu, internet bağlantısı olmadan tamamen çevrimdışı eşler arası mesajlaşmayı mümkün kılar.</string>
-    <string name="perm_benefit_location">Android, yakındaki Bluetooth cihazları taramak için konum izni gerektirir. Zemzeme konumunuzu takip ETMEZ veya kaydetmez.</string>
-    <string name="perm_benefit_background_location">Arka plan konumu, uygulama arka plandayken bile Zemzeme\'nın yakındaki kullanıcıları bulmasını sağlar. Bu olmadan mesh ağı yalnızca uygulama ekranda açıkken çalışır.</string>
+    <string name="perm_benefit_nearby_devices">Bluetooth izinleri, Axzora Chat\'nın mesh ağı üzerinden yakınlardaki diğer kullanıcıları keşfetmesini ve iletişim kurmasını sağlar. Bu, internet bağlantısı olmadan tamamen çevrimdışı eşler arası mesajlaşmayı mümkün kılar.</string>
+    <string name="perm_benefit_location">Android, yakındaki Bluetooth cihazları taramak için konum izni gerektirir. Axzora Chat konumunuzu takip ETMEZ veya kaydetmez.</string>
+    <string name="perm_benefit_background_location">Arka plan konumu, uygulama arka plandayken bile Axzora Chat\'nın yakındaki kullanıcıları bulmasını sağlar. Bu olmadan mesh ağı yalnızca uygulama ekranda açıkken çalışır.</string>
     <string name="perm_benefit_notifications">Bildirimler, uygulama arka plandayken bile özel mesaj aldığınızda veya kanallarınızda yeni etkinlik olduğunda sizi haberdar eder.</string>
-    <string name="perm_benefit_battery_optimization">Pil optimizasyonunu devre dışı bırakmak, Zemzeme\'nın arka planda güvenilir şekilde çalışmasını ve mesh ağı bağlantılarını korumasını sağlar. Bu olmadan Android, pil tasarrufu için uygulamayı kapatarak sizi mesh\'ten ayırabilir.</string>
-    <string name="location_tracking_warning">Zemzeme konumunu takip etmez</string>
+    <string name="perm_benefit_battery_optimization">Pil optimizasyonunu devre dışı bırakmak, Axzora Chat\'nın arka planda güvenilir şekilde çalışmasını ve mesh ağı bağlantılarını korumasını sağlar. Bu olmadan Android, pil tasarrufu için uygulamayı kapatarak sizi mesh\'ten ayırabilir.</string>
+    <string name="location_tracking_warning">Axzora Chat konumunu takip etmez</string>
     <string name="at_symbol">@</string>
-    <string name="app_brand">Zemzeme/</string>
+    <string name="app_brand">Axzora Chat/</string>
     <string name="channel_count_prefix"> · ⧉ </string>
     <string name="geohash_people_header">KİŞİLER</string>
     <string name="nobody_around">yakında kimse yok…</string>
@@ -433,14 +433,14 @@
     <string name="cd_play_voice">Oynat</string>
     <string name="cd_pause_voice">Duraklat</string>
 
-    <string name="perm_nearby_devices_desc">Bluetooth ile Zemzeme kullanıcılarını bulmak için gereklidir</string>
-    <string name="perm_nearby_devices_system">Zemzeme\'in yakın cihazlara bağlanmasına izin ver</string>
+    <string name="perm_nearby_devices_desc">Bluetooth ile Axzora Chat kullanıcılarını bulmak için gereklidir</string>
+    <string name="perm_nearby_devices_system">Axzora Chat\'in yakın cihazlara bağlanmasına izin ver</string>
     <string name="perm_location_desc">Android gereği Bluetooth ile yakın kullanıcıları bulmak için gerekli</string>
     <string name="perm_location_system">yakın cihazları taramak için gereklidir</string>
     <string name="perm_background_location_desc">Uygulama arka plandayken yakındaki cihazları taramak için önerilir</string>
     <string name="perm_background_location_system">Arka plan konumu erişimine izin ver</string>
     <string name="perm_notifications_desc">özel mesajlarda bildirim al</string>
-    <string name="perm_notifications_system">Zemzeme\'in bildirim göndermesine izin ver</string>
+    <string name="perm_notifications_system">Axzora Chat\'in bildirim göndermesine izin ver</string>
     <string name="perm_battery_desc">arka planda güvenilir çalışmak ve mesh\'i korumak için pil optimizasyonunu kapat</string>
     <string name="perm_battery_system">pil kısıtlaması olmadan çalışmaya izin ver</string>
 
@@ -460,7 +460,7 @@
     <string name="app_lock_enter_pin">PIN Girin</string>
     <string name="app_lock_set_pin">PIN Ayarla</string>
     <string name="app_lock_confirm_pin">PIN\'i Onayla</string>
-    <string name="app_lock_biometric_title">Zemzeme\'yi Aç</string>
+    <string name="app_lock_biometric_title">Axzora Chat\'yi Aç</string>
     <string name="app_lock_biometric_subtitle">Açmak için sensöre dokunun</string>
     <string name="app_lock_use_pin">PIN Kullan</string>
     <string name="app_lock_wrong_pin">Yanlış PIN</string>
@@ -572,7 +572,7 @@
     <!-- P2P Settings -->
     <string name="p2p_settings_header">AYARLAR</string>
     <string name="p2p_enable">P2P\'yi Etkinleştir</string>
-    <string name="p2p_enable_desc">Diğer Zemzeme eşlerine doğrudan bağlan</string>
+    <string name="p2p_enable_desc">Diğer Axzora Chat eşlerine doğrudan bağlan</string>
     <string name="p2p_use_default_nodes">Varsayılan Düğümleri Kullan</string>
     <string name="p2p_default_nodes_desc">Genel IPFS önyükleme düğümlerine bağlan</string>
     <string name="p2p_custom_nodes_header">ÖZEL ÖNYÜKLEME DÜĞÜMLERİ</string>

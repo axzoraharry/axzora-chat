@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Zemzeme</string>
+    <string name="app_name">Axzora Chat</string>
 
     <!-- Alasan izin -->
     <string name="permission_bluetooth_rationale">Izin Bluetooth diperlukan untuk chatting langsung dengan orang lain tanpa Internet.</string>
@@ -29,12 +29,12 @@
     <string name="battery_optimization_not_required">Optimalisasi baterai tidak diperlukan</string>
     <string name="battery_optimization_checking">Memeriksa optimalisasi baterai</string>
     <string name="battery_optimization_why_disable">Mengapa menonaktifkan optimalisasi baterai?</string>
-    <string name="battery_optimization_explanation">Zemzeme berjalan di latar belakang untuk mempertahankan koneksi mesh dengan perangkat terdekat. Optimalisasi baterai dapat mengganggu koneksi ini, menyebabkan pesan tertunda atau hilang.\n\nMenonaktifkan optimalisasi baterai memastikan komunikasi peer-to-peer yang andal.</string>
+    <string name="battery_optimization_explanation">Axzora Chat berjalan di latar belakang untuk mempertahankan koneksi mesh dengan perangkat terdekat. Optimalisasi baterai dapat mengganggu koneksi ini, menyebabkan pesan tertunda atau hilang.\n\nMenonaktifkan optimalisasi baterai memastikan komunikasi peer-to-peer yang andal.</string>
     <string name="battery_optimization_disable_button">Nonaktifkan optimalisasi baterai</string>
-    <string name="battery_optimization_note">Catatan: Anda dapat mengubahnya nanti di Pengaturan Android &gt; Aplikasi &gt; Zemzeme &gt; Baterai.</string>
-    <string name="battery_optimization_not_supported_explanation">Perangkat Anda tidak memerlukan pengaturan optimalisasi baterai. Zemzeme akan berjalan normal.</string>
-    <string name="battery_optimization_not_supported_message">Perangkat Anda tidak memerlukan pengaturan optimalisasi baterai. Zemzeme akan berjalan normal.</string>
-    <string name="battery_optimization_success_message">Zemzeme dapat berjalan andal di latar belakang</string>
+    <string name="battery_optimization_note">Catatan: Anda dapat mengubahnya nanti di Pengaturan Android &gt; Aplikasi &gt; Axzora Chat &gt; Baterai.</string>
+    <string name="battery_optimization_not_supported_explanation">Perangkat Anda tidak memerlukan pengaturan optimalisasi baterai. Axzora Chat akan berjalan normal.</string>
+    <string name="battery_optimization_not_supported_message">Perangkat Anda tidak memerlukan pengaturan optimalisasi baterai. Axzora Chat akan berjalan normal.</string>
+    <string name="battery_optimization_success_message">Axzora Chat dapat berjalan andal di latar belakang</string>
     <string name="battery_optimization_benefits">• Pengiriman pesan yang andal\n• Mempertahankan koneksi mesh\n• Relay pesan latar belakang\n• Mencegah putusnya koneksi</string>
     <string name="battery_optimization_check_again">Periksa lagi</string>
     <string name="battery_optimization_skip">Lewati sekarang</string>
@@ -46,7 +46,7 @@
     <string name="notification_summary_more">dan %1$d lagi</string>
     <string name="notification_messages_from_people">%1$d pesan dari %2$d orang</string>
     <string name="notification_more_conversations">dan %1$d percakapan lagi</string>
-    <string name="notification_active_peers_title">👥 Zemzeme user terdekat!</string>
+    <string name="notification_active_peers_title">👥 Axzora Chat user terdekat!</string>
     <string name="notification_active_peers_one">1 orang terdekat</string>
     <string name="notification_active_peers_many">%1$d orang terdekat</string>
     <string name="notification_new_messages">Pesan baru</string>
@@ -57,8 +57,8 @@
     <string name="notification_new_activity_in">Aktivitas baru di %1$s</string>
     <string name="notification_messages_in">Pesan di %1$s</string>
     <string name="notification_joined_conversation">%1$s bergabung dengan percakapan</string>
-    <string name="notification_geohash_summary_title_mentions">Zemzeme – %1$d penyebutan</string>
-    <string name="notification_geohash_summary_title">Zemzeme – Chat lokasi</string>
+    <string name="notification_geohash_summary_title_mentions">Axzora Chat – %1$d penyebutan</string>
+    <string name="notification_geohash_summary_title">Axzora Chat – Chat lokasi</string>
     <string name="notification_geohash_summary_text">%1$d pesan dari %2$d lokasi</string>
     <string name="notification_mesh_mention_title_singular">Disebut di Bluetooth Chat</string>
     <string name="notification_mesh_mention_title_plural">%1$d penyebutan di Bluetooth Chat</string>
@@ -253,24 +253,24 @@
     <!-- Layar onboarding -->
     <string name="location_services_required">Layanan lokasi diperlukan</string>
     <string name="privacy_first">Privasi pertama</string>
-    <string name="location_explanation">Zemzeme TIDAK melacak lokasi Anda.\n\nLayanan lokasi diperlukan untuk pemindaian Bluetooth dan fitur geohash chat.</string>
-    <string name="location_needs_for">Zemzeme memerlukan layanan lokasi untuk:</string>
+    <string name="location_explanation">Axzora Chat TIDAK melacak lokasi Anda.\n\nLayanan lokasi diperlukan untuk pemindaian Bluetooth dan fitur geohash chat.</string>
+    <string name="location_needs_for">Axzora Chat memerlukan layanan lokasi untuk:</string>
     <string name="location_needs_bullets">• Pemindaian perangkat Bluetooth\n• Menemukan pengguna terdekat di jaringan mesh\n• Fitur geohash chat\n• Tidak ada pelacakan atau pengumpulan lokasi</string>
     <string name="open_location_settings">Buka pengaturan lokasi</string>
     <string name="check_again">Periksa lagi</string>
     <string name="location_services_unavailable">Layanan lokasi tidak tersedia</string>
-    <string name="location_unavailable_explanation">Layanan lokasi tidak tersedia di perangkat ini. Ini tidak biasa karena layanan lokasi standar di perangkat Android.\n\nZemzeme memerlukan layanan lokasi agar pemindaian Bluetooth berfungsi dengan benar (persyaratan Android). Tanpanya, aplikasi tidak dapat menemukan pengguna terdekat.</string>
+    <string name="location_unavailable_explanation">Layanan lokasi tidak tersedia di perangkat ini. Ini tidak biasa karena layanan lokasi standar di perangkat Android.\n\nAxzora Chat memerlukan layanan lokasi agar pemindaian Bluetooth berfungsi dengan benar (persyaratan Android). Tanpanya, aplikasi tidak dapat menemukan pengguna terdekat.</string>
     <string name="checking_location_services">Memeriksa layanan lokasi …</string>
     <string name="bluetooth_required">Bluetooth diperlukan</string>
-    <string name="bluetooth_needs_for">Zemzeme memerlukan Bluetooth untuk:</string>
+    <string name="bluetooth_needs_for">Axzora Chat memerlukan Bluetooth untuk:</string>
     <string name="bluetooth_needs_bullets">• Menemukan pengguna terdekat\n• Membuat koneksi jaringan mesh\n• Mengirim dan menerima pesan\n• Berfungsi tanpa Internet atau server</string>
     <string name="enable_bluetooth">Aktifkan Bluetooth</string>
     <string name="bluetooth_not_supported">Bluetooth tidak didukung</string>
-    <string name="bluetooth_unsupported_explanation">Perangkat ini tidak mendukung Bluetooth Low Energy (BLE), yang diperlukan agar Zemzeme berfungsi.\n\nZemzeme memerlukan BLE untuk membuat jaringan mesh dan berkomunikasi dengan perangkat terdekat tanpa Internet.</string>
+    <string name="bluetooth_unsupported_explanation">Perangkat ini tidak mendukung Bluetooth Low Energy (BLE), yang diperlukan agar Axzora Chat berfungsi.\n\nAxzora Chat memerlukan BLE untuk membuat jaringan mesh dan berkomunikasi dengan perangkat terdekat tanpa Internet.</string>
     <string name="checking_bluetooth_status">Memeriksa status Bluetooth …</string>
     <string name="battery_optimization_detected_title">Optimalisasi baterai terdeteksi</string>
     <string name="battery_optimization_enabled_title">Optimalisasi baterai diaktifkan</string>
-    <string name="battery_optimization_explanation_short">Zemzeme harus berjalan di latar belakang untuk mempertahankan koneksi mesh. Optimalisasi baterai dapat mengganggu koneksi ini.</string>
+    <string name="battery_optimization_explanation_short">Axzora Chat harus berjalan di latar belakang untuk mempertahankan koneksi mesh. Optimalisasi baterai dapat mengganggu koneksi ini.</string>
     <string name="benefits_of_disabling">Manfaat menonaktifkan</string>
     <string name="battery_benefits_short">• pengiriman pesan yang andal\n• mempertahankan koneksi mesh\n• mencegah putusnya koneksi</string>
     <string name="disable_battery_optimization">Nonaktifkan optimalisasi baterai</string>
@@ -289,12 +289,12 @@
     <string name="perm_required_label">Wajib</string>
     <string name="perm_recommended_label">Disarankan</string>
     <string name="perm_info_dialog_ok">OK</string>
-    <string name="perm_benefit_nearby_devices">Izin Bluetooth memungkinkan Zemzeme menemukan dan berkomunikasi dengan pengguna lain di sekitar melalui jaringan mesh. Ini memungkinkan pesan peer-to-peer sepenuhnya offline tanpa koneksi internet.</string>
-    <string name="perm_benefit_location">Android memerlukan izin lokasi untuk memindai perangkat Bluetooth di sekitar. Zemzeme TIDAK melacak atau menyimpan lokasi Anda.</string>
-    <string name="perm_benefit_background_location">Lokasi latar belakang memungkinkan Zemzeme menemukan pengguna terdekat meskipun aplikasi di latar belakang. Tanpa ini, jaringan mesh hanya berfungsi saat aplikasi terbuka di layar.</string>
+    <string name="perm_benefit_nearby_devices">Izin Bluetooth memungkinkan Axzora Chat menemukan dan berkomunikasi dengan pengguna lain di sekitar melalui jaringan mesh. Ini memungkinkan pesan peer-to-peer sepenuhnya offline tanpa koneksi internet.</string>
+    <string name="perm_benefit_location">Android memerlukan izin lokasi untuk memindai perangkat Bluetooth di sekitar. Axzora Chat TIDAK melacak atau menyimpan lokasi Anda.</string>
+    <string name="perm_benefit_background_location">Lokasi latar belakang memungkinkan Axzora Chat menemukan pengguna terdekat meskipun aplikasi di latar belakang. Tanpa ini, jaringan mesh hanya berfungsi saat aplikasi terbuka di layar.</string>
     <string name="perm_benefit_notifications">Notifikasi memberi tahu Anda saat menerima pesan pribadi atau saat ada aktivitas baru di channel Anda, meskipun aplikasi di latar belakang.</string>
-    <string name="perm_benefit_battery_optimization">Menonaktifkan optimalisasi baterai memastikan Zemzeme berjalan andal di latar belakang dan mempertahankan koneksi jaringan mesh. Tanpa ini, Android mungkin menghentikan aplikasi untuk menghemat baterai dan memutuskan Anda dari mesh.</string>
-    <string name="location_tracking_warning">Zemzeme TIDAK melacak lokasi Anda</string>
+    <string name="perm_benefit_battery_optimization">Menonaktifkan optimalisasi baterai memastikan Axzora Chat berjalan andal di latar belakang dan mempertahankan koneksi jaringan mesh. Tanpa ini, Android mungkin menghentikan aplikasi untuk menghemat baterai dan memutuskan Anda dari mesh.</string>
+    <string name="location_tracking_warning">Axzora Chat TIDAK melacak lokasi Anda</string>
     <string name="geohash_people_header">ORANG</string>
     <string name="nobody_around">tidak ada orang di sekitar …</string>
     <string name="you_suffix"> (Anda)</string>
@@ -323,14 +323,14 @@
     <string name="pow_label_format">pow: %1$dbit</string>
 
     <!-- Deskripsi izin -->
-    <string name="perm_nearby_devices_desc">Diperlukan untuk menemukan pengguna Zemzeme melalui Bluetooth</string>
-    <string name="perm_nearby_devices_system">Izinkan Zemzeme terhubung dengan perangkat terdekat</string>
-    <string name="perm_location_desc">Diperlukan oleh Android untuk menemukan pengguna Zemzeme terdekat melalui Bluetooth</string>
-    <string name="perm_location_system">Zemzeme memerlukan ini untuk memindai perangkat terdekat</string>
+    <string name="perm_nearby_devices_desc">Diperlukan untuk menemukan pengguna Axzora Chat melalui Bluetooth</string>
+    <string name="perm_nearby_devices_system">Izinkan Axzora Chat terhubung dengan perangkat terdekat</string>
+    <string name="perm_location_desc">Diperlukan oleh Android untuk menemukan pengguna Axzora Chat terdekat melalui Bluetooth</string>
+    <string name="perm_location_system">Axzora Chat memerlukan ini untuk memindai perangkat terdekat</string>
     <string name="perm_notifications_desc">Terima notifikasi saat Anda menerima pesan pribadi</string>
-    <string name="perm_notifications_system">Izinkan Zemzeme mengirim notifikasi kepada Anda</string>
-    <string name="perm_battery_desc">Nonaktifkan optimalisasi baterai untuk memastikan Zemzeme berjalan andal di latar belakang dan mempertahankan koneksi jaringan mesh</string>
-    <string name="perm_battery_system">Izinkan Zemzeme berjalan tanpa pembatasan baterai</string>
+    <string name="perm_notifications_system">Izinkan Axzora Chat mengirim notifikasi kepada Anda</string>
+    <string name="perm_battery_desc">Nonaktifkan optimalisasi baterai untuk memastikan Axzora Chat berjalan andal di latar belakang dan mempertahankan koneksi jaringan mesh</string>
+    <string name="perm_battery_system">Izinkan Axzora Chat berjalan tanpa pembatasan baterai</string>
 
     <!-- Jenis izin -->
     <string name="perm_type_nearby_devices">Perangkat terdekat</string>
@@ -348,7 +348,7 @@
     <string name="app_lock_enter_pin">Masukkan PIN</string>
     <string name="app_lock_set_pin">Atur PIN</string>
     <string name="app_lock_confirm_pin">Konfirmasi PIN</string>
-    <string name="app_lock_biometric_title">Buka kunci Zemzeme</string>
+    <string name="app_lock_biometric_title">Buka kunci Axzora Chat</string>
     <string name="app_lock_biometric_subtitle">Gunakan biometrik untuk membuka kunci</string>
     <string name="app_lock_use_pin">Gunakan PIN</string>
     <string name="app_lock_wrong_pin">PIN salah</string>
@@ -439,7 +439,7 @@
     <string name="mesh_service_channel_desc">Menjaga mesh Bluetooth tetap berjalan di latar belakang</string>
     <string name="cd_settings">Pengaturan</string>
     <string name="cd_location_notes">Catatan lokasi</string>
-    <string name="notification_action_quit_bitchat">Keluar dari Zemzeme</string>
+    <string name="notification_action_quit_bitchat">Keluar dari Axzora Chat</string>
     <string name="about_background_title">jalankan di latar belakang</string>
     <string name="about_background_desc">jaga mesh tetap aktif saat aplikasi ditutup (layanan foreground)</string>
     <string name="about_p2p_subtitle">Koneksi langsung antar-peer via p2p</string>
@@ -470,9 +470,9 @@
 
     <string name="background_location_required_title">Lokasi Latar Belakang Direkomendasikan</string>
     <string name="background_location_required_subtitle">opsional, meningkatkan keandalan mesh</string>
-    <string name="background_location_explanation">Android merekomendasikan lokasi latar belakang agar Zemzeme dapat mencari perangkat terdekat saat aplikasi tidak dibuka. Ini menjaga mesh tetap aktif setelah reboot.</string>
+    <string name="background_location_explanation">Android merekomendasikan lokasi latar belakang agar Axzora Chat dapat mencari perangkat terdekat saat aplikasi tidak dibuka. Ini menjaga mesh tetap aktif setelah reboot.</string>
     <string name="background_location_settings_tip">Saat pengaturan terbuka, pilih "Izinkan sepanjang waktu".</string>
-    <string name="background_location_needs_for">Zemzeme menggunakan lokasi latar belakang untuk:</string>
+    <string name="background_location_needs_for">Axzora Chat menggunakan lokasi latar belakang untuk:</string>
     <string name="background_location_needs_bullets">- mencari perangkat terdekat saat aplikasi ditutup\n- menyambung kembali setelah reboot\n- menjaga mesh tetap berjalan di latar belakang</string>
     <string name="background_location_privacy_note">Kami TIDAK PERNAH mengumpulkan atau menyimpan lokasi Anda. Privasi Anda aman.</string>
     <string name="grant_background_location">Izinkan Lokasi Latar Belakang</string>
@@ -560,7 +560,7 @@
     <!-- Pengaturan P2P -->
     <string name="p2p_settings_header">PENGATURAN</string>
     <string name="p2p_enable">Aktifkan P2P</string>
-    <string name="p2p_enable_desc">Hubungkan langsung ke peer Zemzeme lainnya</string>
+    <string name="p2p_enable_desc">Hubungkan langsung ke peer Axzora Chat lainnya</string>
     <string name="p2p_use_default_nodes">Gunakan Node Default</string>
     <string name="p2p_default_nodes_desc">Hubungkan ke node bootstrap IPFS publik</string>
     <string name="p2p_custom_nodes_header">NODE BOOTSTRAP KUSTOM</string>
@@ -617,7 +617,7 @@
     <string name="dot">.</string>
     <string name="warning_emoji">⚠️</string>
     <string name="at_symbol">@</string>
-    <string name="app_brand">Zemzeme/</string>
+    <string name="app_brand">Axzora Chat/</string>
     <string name="channel_count_prefix"> · ⧉ </string>
     <string name="mention_suggestion_at">@%1$s</string>
     <string name="at_nickname">@%1$s</string>

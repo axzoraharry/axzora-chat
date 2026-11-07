@@ -21,7 +21,7 @@
     <!-- Notification permissions -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <!-- Signature permission for internal UI shutdown broadcasts -->
-    <uses-permission android:name="com.roman.zemzeme.permission.FORCE_FINISH" />
+    <uses-permission android:name="app.axzora.chat.permission.FORCE_FINISH" />
     <!-- Foreground service and boot permissions for long-running background mesh -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <!-- Connected device foreground service type for BLE operations (API 34+) -->
@@ -58,7 +58,7 @@
     <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <permission
-        android:name="com.roman.zemzeme.permission.FORCE_FINISH"
+        android:name="app.axzora.chat.permission.FORCE_FINISH"
         android:protectionLevel="signature" />
 
     <application
@@ -105,7 +105,7 @@
             android:targetActivity=".MainActivity"
             android:icon="@mipmap/ic_launcher"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:label="Zemzeme"
+            android:label="Axzora Chat"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -2215,7 +2215,7 @@
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.roman.zemzeme.action.NOTIFICATION_PERMISSION_GRANTED" />
+                <action android:name="app.axzora.chat.action.NOTIFICATION_PERMISSION_GRANTED" />
             </intent-filter>
         </receiver>
 
@@ -2235,7 +2235,7 @@
             android:name=".update.UpdateReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.roman.zemzeme.UPDATE_STATUS" />
+                <action android:name="app.axzora.chat.UPDATE_STATUS" />
             </intent-filter>
         </receiver>
     </application>

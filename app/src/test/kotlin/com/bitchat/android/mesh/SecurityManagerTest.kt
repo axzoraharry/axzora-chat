@@ -1,10 +1,10 @@
-package com.roman.zemzeme.mesh
+package app.axzora.chat.mesh
 
 import android.os.Build
-import com.roman.zemzeme.crypto.EncryptionService
-import com.roman.zemzeme.model.IdentityAnnouncement
-import com.roman.zemzeme.protocol.ZemzemePacket
-import com.roman.zemzeme.protocol.MessageType
+import app.axzora.chat.crypto.EncryptionService
+import app.axzora.chat.model.IdentityAnnouncement
+import app.axzora.chat.protocol.ZemzemePacket
+import app.axzora.chat.protocol.MessageType
 import org.junit.After
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -251,7 +251,7 @@ class SecurityManagerTest {
         // 1. Initial Announce (Fresh)
         val packet1 = ZemzemePacket(
             type = MessageType.ANNOUNCE.value,
-            ttl = com.roman.zemzeme.util.AppConstants.MESSAGE_TTL_HOPS, // 7u
+            ttl = app.axzora.chat.util.AppConstants.MESSAGE_TTL_HOPS, // 7u
             senderID = unknownPeerID,
             payload = payload
         )
@@ -262,11 +262,11 @@ class SecurityManagerTest {
         assertTrue("First ANNOUNCE should be accepted", securityManager.validatePacket(packet1, unknownPeerID))
         
         // 2. Relayed Duplicate (Lower TTL)
-        val packet2 = packet1.copy(ttl = (com.roman.zemzeme.util.AppConstants.MESSAGE_TTL_HOPS - 1u).toUByte())
+        val packet2 = packet1.copy(ttl = (app.axzora.chat.util.AppConstants.MESSAGE_TTL_HOPS - 1u).toUByte())
         assertFalse("Relayed duplicate ANNOUNCE should be rejected", securityManager.validatePacket(packet2, unknownPeerID))
         
         // 3. Direct Duplicate (Max TTL)
-        val packet3 = packet1.copy(ttl = com.roman.zemzeme.util.AppConstants.MESSAGE_TTL_HOPS)
+        val packet3 = packet1.copy(ttl = app.axzora.chat.util.AppConstants.MESSAGE_TTL_HOPS)
         assertTrue("Fresh duplicate ANNOUNCE should be accepted", securityManager.validatePacket(packet3, unknownPeerID))
     }
 

@@ -1,8 +1,8 @@
-package com.roman.zemzeme.crypto
+package app.axzora.chat.crypto
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
-import com.roman.zemzeme.noise.NoiseEncryptionService
+import app.axzora.chat.noise.NoiseEncryptionService
 import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Before

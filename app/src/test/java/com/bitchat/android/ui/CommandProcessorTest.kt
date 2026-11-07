@@ -1,9 +1,9 @@
-package com.roman.zemzeme.ui
+package app.axzora.chat.ui
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
-import com.roman.zemzeme.mesh.BluetoothMeshService
-import com.roman.zemzeme.model.ZemzemeMessage
+import app.axzora.chat.mesh.BluetoothMeshService
+import app.axzora.chat.model.ZemzemeMessage
 import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope

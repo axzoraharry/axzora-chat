@@ -13,15 +13,15 @@ val localProps = Properties().apply {
 }
 
 android {
-    namespace = "com.roman.zemzeme"
+    namespace = "app.axzora.chat"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.roman.zemzeme"
+        applicationId = "app.axzora.chat"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 3
-        versionName = "1.0.2"
+        versionCode = 10016
+        versionName = "1.0.16"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -87,7 +87,7 @@ android {
         abi {
             isEnable = enableSplits
             reset()
-            include("arm64-v8a", "x86_64", "armeabi-v7a", "x86")
+            include("arm64-v8a")  // golib.aar ships arm64-v8a only
             isUniversalApk = true  // For F-Droid and fallback
         }
     }

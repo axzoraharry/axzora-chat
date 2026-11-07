@@ -3,8 +3,8 @@ package com.zemzeme
 import android.content.Context
 import androidx.core.app.NotificationManagerCompat
 import androidx.test.core.app.ApplicationProvider
-import com.roman.zemzeme.ui.NotificationManager
-import com.roman.zemzeme.util.NotificationIntervalManager
+import app.axzora.chat.ui.NotificationManager
+import app.axzora.chat.util.NotificationIntervalManager
 import org.junit.Before
 import org.junit.Ignore
 import org.junit.Test

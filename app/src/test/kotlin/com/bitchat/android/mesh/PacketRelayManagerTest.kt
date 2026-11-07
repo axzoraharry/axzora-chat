@@ -1,10 +1,10 @@
 
-package com.roman.zemzeme.mesh
+package app.axzora.chat.mesh
 
-import com.roman.zemzeme.model.RoutedPacket
-import com.roman.zemzeme.protocol.ZemzemePacket
-import com.roman.zemzeme.protocol.MessageType
-import com.roman.zemzeme.util.toHexString
+import app.axzora.chat.model.RoutedPacket
+import app.axzora.chat.protocol.ZemzemePacket
+import app.axzora.chat.protocol.MessageType
+import app.axzora.chat.util.toHexString
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.Before

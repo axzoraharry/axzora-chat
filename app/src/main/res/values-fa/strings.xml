@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">زمزمه</string>
+    <string name="app_name">Axzora Chat</string>
 
     <!-- توضیح مجوزها -->
     <string name="permission_bluetooth_rationale">برای چت مستقیم با دیگران بدون اینترنت، به مجوز بلوتوث نیاز است.</string>
@@ -433,7 +433,7 @@
     <string name="dot">.</string>
     <string name="warning_emoji">⚠️</string>
     <string name="at_symbol">@</string>
-    <string name="app_brand">Zemzeme/</string>
+    <string name="app_brand">Axzora Chat/</string>
     <string name="channel_count_prefix"> · ⧉ </string>
     <string name="mention_suggestion_at">@%1$s</string>
     <string name="at_nickname">@%1$s</string>
@@ -484,7 +484,7 @@
     <string name="app_lock_enter_pin">وارد کردن PIN</string>
     <string name="app_lock_set_pin">تنظیم PIN</string>
     <string name="app_lock_confirm_pin">تأیید PIN</string>
-    <string name="app_lock_biometric_title">باز کردن Zemzeme</string>
+    <string name="app_lock_biometric_title">باز کردن Axzora Chat</string>
     <string name="app_lock_biometric_subtitle">حسگر را لمس کنید تا قفل باز شود</string>
     <string name="app_lock_use_pin">استفاده از PIN</string>
     <string name="app_lock_wrong_pin">PIN اشتباه</string>

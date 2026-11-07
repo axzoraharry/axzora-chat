@@ -1,4 +1,4 @@
-package com.roman.zemzeme.services.meshgraph
+package app.axzora.chat.services.meshgraph
 
 import org.junit.Assert.*
 import org.junit.Test

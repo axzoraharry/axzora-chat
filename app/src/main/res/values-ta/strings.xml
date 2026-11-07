@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App core -->
-    <string name="app_name">ஜெம்ஜெமே</string>
+    <string name="app_name">Axzora Chat</string>
     <string name="permission_bluetooth_rationale">இணையம் இல்லாமல் நேர்நிலை செய்தி அனுப்புவதற்கு Bluetooth அனுமதி தேவை.</string>
     <string name="permission_location_rationale">Bluetooth மூலம் அருகிலுள்ள சாதனங்களைக் கண்டுபிடிக்க இருப்பிட அனுமதி தேவை.</string>
     <string name="permission_notification_rationale">புதிய செய்திகள் பற்றி உங்களுக்கு அறிவிக்க அறிவிப்பு அனுமதி தேவை.</string>
@@ -26,12 +26,12 @@
     <string name="battery_optimization_not_required">பேட்டரி மேம்படுத்தல் தேவையில்லை</string>
     <string name="battery_optimization_checking">பேட்டரி மேம்படுத்தல் சரிபார்க்கிறது</string>
     <string name="battery_optimization_why_disable">பேட்டரி மேம்படுத்தலை ஏன் முடக்க வேண்டும்?</string>
-    <string name="battery_optimization_explanation">Zemzeme அருகிலுள்ள சாதனங்களுடன் mesh நெட்வொர்க் இணைப்புகளை பராமரிக்க பின்னணியில் இயங்குகிறது. பேட்டரி மேம்படுத்தல் இந்த இணைப்புகளை தடைசெய்யலாம், இதனால் செய்திகள் தாமதமாகலாம் அல்லது தவறவிடலாம்.\n\nபேட்டரி மேம்படுத்தலை முடக்குவது நம்பகமான நேர்நிலை செய்தி அனுப்புதலை உறுதிசெய்கிறது.</string>
+    <string name="battery_optimization_explanation">Axzora Chat அருகிலுள்ள சாதனங்களுடன் mesh நெட்வொர்க் இணைப்புகளை பராமரிக்க பின்னணியில் இயங்குகிறது. பேட்டரி மேம்படுத்தல் இந்த இணைப்புகளை தடைசெய்யலாம், இதனால் செய்திகள் தாமதமாகலாம் அல்லது தவறவிடலாம்.\n\nபேட்டரி மேம்படுத்தலை முடக்குவது நம்பகமான நேர்நிலை செய்தி அனுப்புதலை உறுதிசெய்கிறது.</string>
     <string name="battery_optimization_disable_button">பேட்டரி மேம்படுத்தலை முடக்கு</string>
-    <string name="battery_optimization_note">குறிப்பு: இந்த அமைப்பை பின்னர் Android அமைப்புகள் > பயன்பாடுகள் > Zemzeme > பேட்டரியில் மாற்றலாம்</string>
-    <string name="battery_optimization_not_supported_explanation">உங்கள் சாதனத்திற்கு பேட்டரி மேம்படுத்தல் அமைப்புகள் தேவையில்லை. Zemzeme இயல்பாக இயங்கும்.</string>
-    <string name="battery_optimization_not_supported_message">உங்கள் சாதனத்திற்கு பேட்டரி மேம்படுத்தல் அமைப்புகள் தேவையில்லை. Zemzeme இயல்பாக இயங்கும்.</string>
-    <string name="battery_optimization_success_message">Zemzeme பின்னணியில் நம்பகமாக இயங்கலாம்</string>
+    <string name="battery_optimization_note">குறிப்பு: இந்த அமைப்பை பின்னர் Android அமைப்புகள் > பயன்பாடுகள் > Axzora Chat > பேட்டரியில் மாற்றலாம்</string>
+    <string name="battery_optimization_not_supported_explanation">உங்கள் சாதனத்திற்கு பேட்டரி மேம்படுத்தல் அமைப்புகள் தேவையில்லை. Axzora Chat இயல்பாக இயங்கும்.</string>
+    <string name="battery_optimization_not_supported_message">உங்கள் சாதனத்திற்கு பேட்டரி மேம்படுத்தல் அமைப்புகள் தேவையில்லை. Axzora Chat இயல்பாக இயங்கும்.</string>
+    <string name="battery_optimization_success_message">Axzora Chat பின்னணியில் நம்பகமாக இயங்கலாம்</string>
     <string name="battery_optimization_benefits">• நம்பகமான செய்தி வழங்கலை உறுதிசெய்கிறது\n• mesh நெட்வொர்க் இணைப்பை பராமரிக்கிறது\n• பின்னணி செய்தி relayகளை அனுமதிக்கிறது\n• இணைப்பு துண்டிப்புகளை தடுக்கிறது</string>
     <string name="battery_optimization_check_again">மீண்டும் சரிபார்க்கவும்</string>
     <string name="battery_optimization_skip">இப்போதைக்கு தவிர்</string>
@@ -43,7 +43,7 @@
     <string name="notification_summary_more">மேலும் %1$d</string>
     <string name="notification_messages_from_people">%2$d நபர்களிடமிருந்து %1$d செய்திகள்</string>
     <string name="notification_more_conversations">மேலும் %1$d உரையாடல்கள்</string>
-    <string name="notification_active_peers_title">👥 zemzemers அருகில் உள்ளனர்!</string>
+    <string name="notification_active_peers_title">👥 Axzora Chat users அருகில் உள்ளனர்!</string>
     <string name="notification_active_peers_one">1 நபர் அருகில்</string>
     <string name="notification_active_peers_many">%1$d நபர்கள் அருகில்</string>
     <string name="notification_new_messages">புதிய செய்திகள்</string>
@@ -54,8 +54,8 @@
     <string name="notification_new_activity_in">%1$s-ல் புதிய செயல்பாடு</string>
     <string name="notification_messages_in">%1$s-ல் செய்திகள்</string>
     <string name="notification_joined_conversation">%1$s உரையாடலில் சேர்ந்தார்</string>
-    <string name="notification_geohash_summary_title_mentions">Zemzeme - %1$d குறிப்புகள்</string>
-    <string name="notification_geohash_summary_title">Zemzeme - இருப்பிட அரட்டைகள்</string>
+    <string name="notification_geohash_summary_title_mentions">Axzora Chat - %1$d குறிப்புகள்</string>
+    <string name="notification_geohash_summary_title">Axzora Chat - இருப்பிட அரட்டைகள்</string>
     <string name="notification_geohash_summary_text">%2$d இருப்பிடங்களிலிருந்து %1$d செய்திகள்</string>
     <string name="notification_mesh_mention_title_singular">Bluetooth Chat-ல் குறிப்பிடப்பட்டது</string>
     <string name="notification_mesh_mention_title_plural">Bluetooth Chat-ல் %1$d குறிப்புகள்</string>
@@ -158,7 +158,7 @@
     <string name="cd_remove_bookmark">புக்மார்க் நீக்கு</string>
     <string name="cd_teleport">டெலிபோர்ட்</string>
     <string name="cd_selected">தேர்ந்தெடுக்கப்பட்டது</string>
-    <string name="notification_action_quit_bitchat">Zemzeme வெளியேறு</string>
+    <string name="notification_action_quit_bitchat">Axzora Chat வெளியேறு</string>
     <string name="about_background_title">பின்னணியில் இயக்கு</string>
     <string name="about_background_desc">பயன்பாடு மூடப்படும்போது mesh செயலில் வைக்கவும் (முன்னணி சேவை)</string>
     <string name="about_p2p_subtitle">p2p வழியாக நேரடி peer இணைப்புகள்</string>
@@ -301,14 +301,14 @@
     <!-- Onboarding screens -->
     <string name="location_services_required">இருப்பிட சேவைகள் தேவை</string>
     <string name="privacy_first">தனியுரிமை முதல்</string>
-    <string name="location_explanation">Zemzeme உங்கள் இருப்பிடத்தை கண்காணிக்காது.\n\nBluetooth scanning மற்றும் Geohash அரட்டை அம்சத்திற்கு இருப்பிட சேவைகள் தேவை.</string>
-    <string name="location_needs_for">Zemzeme-க்கு இருப்பிட சேவைகள் தேவை:</string>
+    <string name="location_explanation">Axzora Chat உங்கள் இருப்பிடத்தை கண்காணிக்காது.\n\nBluetooth scanning மற்றும் Geohash அரட்டை அம்சத்திற்கு இருப்பிட சேவைகள் தேவை.</string>
+    <string name="location_needs_for">Axzora Chat-க்கு இருப்பிட சேவைகள் தேவை:</string>
     <string name="location_needs_bullets">• Bluetooth சாதன scanning\n• mesh நெட்வொர்க்கில் அருகிலுள்ள பயனர்களை கண்டுபிடிக்க\n• Geohash அரட்டை அம்சம்\n• கண்காணிப்பு அல்லது இருப்பிட சேகரிப்பு இல்லை</string>
     <string name="background_location_required_title">பின்னணி இருப்பிடம் பரிந்துரைக்கப்படுகிறது</string>
     <string name="background_location_required_subtitle">விருப்பமானது, mesh நம்பகத்தன்மையை மேம்படுத்துகிறது</string>
-    <string name="background_location_explanation">பயன்பாடு திறக்கப்படாத போது Zemzeme அருகிலுள்ள சாதனங்களை ஸ்கேன் செய்ய Android பின்னணி இருப்பிடத்தை பரிந்துரைக்கிறது. இது மறுதொடக்கத்திற்குப் பிறகும் mesh இயங்குவதை வைத்திருக்கிறது.</string>
+    <string name="background_location_explanation">பயன்பாடு திறக்கப்படாத போது Axzora Chat அருகிலுள்ள சாதனங்களை ஸ்கேன் செய்ய Android பின்னணி இருப்பிடத்தை பரிந்துரைக்கிறது. இது மறுதொடக்கத்திற்குப் பிறகும் mesh இயங்குவதை வைத்திருக்கிறது.</string>
     <string name="background_location_settings_tip">அமைப்புகள் திறக்கும்போது, "எப்பொழுதும் அனுமதி" என்பதை தேர்ந்தெடுங்கள்.</string>
-    <string name="background_location_needs_for">Zemzeme பின்னணி இருப்பிடத்தைப் பயன்படுத்துகிறது:</string>
+    <string name="background_location_needs_for">Axzora Chat பின்னணி இருப்பிடத்தைப் பயன்படுத்துகிறது:</string>
     <string name="background_location_needs_bullets">- பயன்பாடு மூடப்படும்போது அருகிலுள்ள சாதனங்களை ஸ்கேன் செய்ய\n- மறுதொடக்கத்திற்குப் பிறகு மீண்டும் இணைக்க\n- பின்னணியில் mesh இயங்குவதை தொடர</string>
     <string name="background_location_privacy_note">நாங்கள் உங்கள் இருப்பிடத்தை ஒருபோதும் சேகரிக்கவோ சேமிக்கவோ மாட்டோம். உங்கள் தனியுரிமை பாதுகாப்பானது.</string>
     <string name="grant_background_location">பின்னணி இருப்பிடத்தை அனுமதி</string>
@@ -316,18 +316,18 @@
     <string name="open_location_settings">இருப்பிட அமைப்புகளை திற</string>
     <string name="check_again">மீண்டும் சரிபார்க்கவும்</string>
     <string name="location_services_unavailable">இருப்பிட சேவைகள் கிடைக்கவில்லை</string>
-    <string name="location_unavailable_explanation">இந்த சாதனத்தில் இருப்பிட சேவைகள் கிடைக்கவில்லை. Android சாதனங்களில் இருப்பிட சேவைகள் நிலையானதாக இருப்பதால் இது அசாதாரணமானது.\n\nZemzeme-க்கு Bluetooth scanning சரியாக வேலை செய்ய இருப்பிட சேவைகள் தேவை (Android தேவை). இல்லாமல், பயன்பாடு அருகிலுள்ள பயனர்களை கண்டுபிடிக்க முடியாது.</string>
+    <string name="location_unavailable_explanation">இந்த சாதனத்தில் இருப்பிட சேவைகள் கிடைக்கவில்லை. Android சாதனங்களில் இருப்பிட சேவைகள் நிலையானதாக இருப்பதால் இது அசாதாரணமானது.\n\nAxzora Chat-க்கு Bluetooth scanning சரியாக வேலை செய்ய இருப்பிட சேவைகள் தேவை (Android தேவை). இல்லாமல், பயன்பாடு அருகிலுள்ள பயனர்களை கண்டுபிடிக்க முடியாது.</string>
     <string name="checking_location_services">இருப்பிட சேவைகள் சரிபார்க்கிறது...</string>
     <string name="bluetooth_required">Bluetooth தேவை</string>
-    <string name="bluetooth_needs_for">Zemzeme-க்கு Bluetooth தேவை:</string>
+    <string name="bluetooth_needs_for">Axzora Chat-க்கு Bluetooth தேவை:</string>
     <string name="bluetooth_needs_bullets">• அருகிலுள்ள பயனர்களை கண்டுபிடிக்க\n• mesh நெட்வொர்க் இணைப்புகளை உருவாக்க\n• செய்திகளை அனுப்பவும் பெறவும்\n• இணையம் அல்லது சர்வர்கள் இல்லாமல் வேலை செய்ய</string>
     <string name="enable_bluetooth">Bluetooth இயக்கு</string>
     <string name="bluetooth_not_supported">Bluetooth ஆதரிக்கப்படவில்லை</string>
-    <string name="bluetooth_unsupported_explanation">இந்த சாதனம் Bluetooth Low Energy (BLE) ஆதரிக்கவில்லை, இது Zemzeme செயல்பட தேவை.\n\nZemzeme-க்கு mesh நெட்வொர்க்குகளை உருவாக்கவும் இணையம் இல்லாமல் அருகிலுள்ள சாதனங்களுடன் தொடர்பு கொள்ளவும் BLE தேவை.</string>
+    <string name="bluetooth_unsupported_explanation">இந்த சாதனம் Bluetooth Low Energy (BLE) ஆதரிக்கவில்லை, இது Axzora Chat செயல்பட தேவை.\n\nAxzora Chat-க்கு mesh நெட்வொர்க்குகளை உருவாக்கவும் இணையம் இல்லாமல் அருகிலுள்ள சாதனங்களுடன் தொடர்பு கொள்ளவும் BLE தேவை.</string>
     <string name="checking_bluetooth_status">Bluetooth நிலை சரிபார்க்கிறது...</string>
     <string name="battery_optimization_detected_title">பேட்டரி மேம்படுத்தல் கண்டறியப்பட்டது</string>
     <string name="battery_optimization_enabled_title">பேட்டரி மேம்படுத்தல் இயக்கப்பட்டது</string>
-    <string name="battery_optimization_explanation_short">Zemzeme mesh இணைப்புகளை பராமரிக்க பின்னணியில் இயங்க வேண்டும். பேட்டரி மேம்படுத்தல் இந்த இணைப்புகளை தடைசெய்யலாம்.</string>
+    <string name="battery_optimization_explanation_short">Axzora Chat mesh இணைப்புகளை பராமரிக்க பின்னணியில் இயங்க வேண்டும். பேட்டரி மேம்படுத்தல் இந்த இணைப்புகளை தடைசெய்யலாம்.</string>
     <string name="benefits_of_disabling">முடக்குவதன் நன்மைகள்</string>
     <string name="battery_benefits_short">• நம்பகமான செய்தி வழங்கல்\n• mesh இணைப்பை பராமரிக்கிறது\n• இணைப்பு துண்டிப்புகளை தடுக்கிறது</string>
     <string name="disable_battery_optimization">பேட்டரி மேம்படுத்தலை முடக்கு</string>
@@ -345,9 +345,9 @@
     <string name="privacy_bullets">• கண்காணிப்பு அல்லது தரவு சேகரிப்பு இல்லை\n• Bluetooth mesh அரட்டைகள் முழுமையாக ஆஃப்லைன்\n• Geohash அரட்டைகள் இணையத்தைப் பயன்படுத்துகின்றன</string>
     <string name="permissions_header">அனுமதிகள்</string>
     <string name="grant_permissions">அனுமதிகள் வழங்கு</string>
-    <string name="location_tracking_warning">Zemzeme உங்கள் இருப்பிடத்தை கண்காணிக்காது</string>
+    <string name="location_tracking_warning">Axzora Chat உங்கள் இருப்பிடத்தை கண்காணிக்காது</string>
     <string name="at_symbol">@</string>
-    <string name="app_brand">Zemzeme/</string>
+    <string name="app_brand">Axzora Chat/</string>
     <string name="channel_count_prefix"> · ⧉ </string>
     <string name="geohash_people_header">நபர்கள்</string>
     <string name="nobody_around">யாரும் அருகில் இல்லை...</string>
@@ -394,16 +394,16 @@
     <string name="cd_pause_voice">இடைநிறுத்து</string>
 
     <!-- Permission descriptions -->
-    <string name="perm_nearby_devices_desc">Bluetooth மூலம் Zemzeme பயனர்களை கண்டுபிடிக்க தேவை</string>
-    <string name="perm_nearby_devices_system">Zemzeme-ஐ அருகிலுள்ள சாதனங்களுடன் இணைக்க அனுமதி</string>
-    <string name="perm_location_desc">Bluetooth மூலம் அருகிலுள்ள Zemzeme பயனர்களை கண்டுபிடிக்க Android-ஆல் தேவை</string>
-    <string name="perm_location_system">அருகிலுள்ள சாதனங்களை ஸ்கேன் செய்ய Zemzeme-க்கு இது தேவை</string>
+    <string name="perm_nearby_devices_desc">Bluetooth மூலம் Axzora Chat பயனர்களை கண்டுபிடிக்க தேவை</string>
+    <string name="perm_nearby_devices_system">Axzora Chat-ஐ அருகிலுள்ள சாதனங்களுடன் இணைக்க அனுமதி</string>
+    <string name="perm_location_desc">Bluetooth மூலம் அருகிலுள்ள Axzora Chat பயனர்களை கண்டுபிடிக்க Android-ஆல் தேவை</string>
+    <string name="perm_location_system">அருகிலுள்ள சாதனங்களை ஸ்கேன் செய்ய Axzora Chat-க்கு இது தேவை</string>
     <string name="perm_background_location_desc">பயன்பாடு பின்னணியில் இருக்கும்போது அருகிலுள்ள சாதனங்களை ஸ்கேன் செய்ய பரிந்துரைக்கப்படுகிறது</string>
     <string name="perm_background_location_system">பின்னணி இருப்பிட அணுகலை அனுமதி</string>
     <string name="perm_notifications_desc">தனிப்பட்ட செய்திகள் பெறும்போது அறிவிப்புகளை பெறவும்</string>
-    <string name="perm_notifications_system">Zemzeme உங்களுக்கு அறிவிப்புகள் அனுப்ப அனுமதி</string>
-    <string name="perm_battery_desc">Zemzeme பின்னணியில் நம்பகமாக இயங்குவதையும் mesh நெட்வொர்க் இணைப்புகளை பராமரிப்பதையும் உறுதிசெய்ய பேட்டரி மேம்படுத்தலை முடக்கவும்</string>
-    <string name="perm_battery_system">Zemzeme பேட்டரி கட்டுப்பாடுகள் இல்லாமல் இயங்க அனுமதி</string>
+    <string name="perm_notifications_system">Axzora Chat உங்களுக்கு அறிவிப்புகள் அனுப்ப அனுமதி</string>
+    <string name="perm_battery_desc">Axzora Chat பின்னணியில் நம்பகமாக இயங்குவதையும் mesh நெட்வொர்க் இணைப்புகளை பராமரிப்பதையும் உறுதிசெய்ய பேட்டரி மேம்படுத்தலை முடக்கவும்</string>
+    <string name="perm_battery_system">Axzora Chat பேட்டரி கட்டுப்பாடுகள் இல்லாமல் இயங்க அனுமதி</string>
 
     <!-- Permission types -->
     <string name="perm_type_nearby_devices">அருகிலுள்ள சாதனங்கள்</string>
@@ -422,7 +422,7 @@
     <string name="app_lock_enter_pin">PIN உள்ளிடவும்</string>
     <string name="app_lock_set_pin">PIN அமைக்கவும்</string>
     <string name="app_lock_confirm_pin">PIN உறுதிப்படுத்தவும்</string>
-    <string name="app_lock_biometric_title">Zemzeme திறக்கவும்</string>
+    <string name="app_lock_biometric_title">Axzora Chat திறக்கவும்</string>
     <string name="app_lock_biometric_subtitle">திறக்க சென்சாரை தொடவும்</string>
     <string name="app_lock_use_pin">PIN பயன்படுத்தவும்</string>
     <string name="app_lock_wrong_pin">தவறான PIN</string>
@@ -504,11 +504,11 @@
     <string name="perm_required_label">தேவை</string>
     <string name="perm_recommended_label">பரிந்துரைக்கப்பட்டது</string>
     <string name="perm_info_dialog_ok">சரி</string>
-    <string name="perm_benefit_nearby_devices">Bluetooth அனுமதிகள் Zemzeme-ஐ mesh நெட்வொர்க் மூலம் அருகிலுள்ள பயனர்களை கண்டுபிடிக்கவும் தொடர்பு கொள்ளவும் அனுமதிக்கின்றன. இது இணைய இணைப்பு இல்லாமல் முழுமையான ஆஃப்லைன் பியர்-டு-பியர் செய்தியிடலை இயக்குகிறது.</string>
-    <string name="perm_benefit_location">Bluetooth சாதனங்களை ஸ்கேன் செய்ய Android-க்கு இருப்பிட அனுமதி தேவை. Zemzeme உங்கள் இருப்பிடத்தை கண்காணிக்காது அல்லது சேமிக்காது.</string>
-    <string name="perm_benefit_background_location">பின்னணி இருப்பிடம் பயன்பாடு பின்னணியில் இருக்கும்போது கூட அருகிலுள்ள பயனர்களை கண்டுபிடிக்க Zemzeme-ஐ அனுமதிக்கிறது. இது இல்லாமல், mesh நெட்வொர்க் பயன்பாடு திரையில் திறந்திருக்கும்போது மட்டுமே வேலை செய்யும்.</string>
+    <string name="perm_benefit_nearby_devices">Bluetooth அனுமதிகள் Axzora Chat-ஐ mesh நெட்வொர்க் மூலம் அருகிலுள்ள பயனர்களை கண்டுபிடிக்கவும் தொடர்பு கொள்ளவும் அனுமதிக்கின்றன. இது இணைய இணைப்பு இல்லாமல் முழுமையான ஆஃப்லைன் பியர்-டு-பியர் செய்தியிடலை இயக்குகிறது.</string>
+    <string name="perm_benefit_location">Bluetooth சாதனங்களை ஸ்கேன் செய்ய Android-க்கு இருப்பிட அனுமதி தேவை. Axzora Chat உங்கள் இருப்பிடத்தை கண்காணிக்காது அல்லது சேமிக்காது.</string>
+    <string name="perm_benefit_background_location">பின்னணி இருப்பிடம் பயன்பாடு பின்னணியில் இருக்கும்போது கூட அருகிலுள்ள பயனர்களை கண்டுபிடிக்க Axzora Chat-ஐ அனுமதிக்கிறது. இது இல்லாமல், mesh நெட்வொர்க் பயன்பாடு திரையில் திறந்திருக்கும்போது மட்டுமே வேலை செய்யும்.</string>
     <string name="perm_benefit_notifications">தனிப்பட்ட செய்தி அல்லது சேனல்களில் புதிய செயல்பாடு இருக்கும்போது அறிவிப்புகள் உங்களுக்கு தெரிவிக்கும், பயன்பாடு பின்னணியில் இருக்கும்போது கூட.</string>
-    <string name="perm_benefit_battery_optimization">பேட்டரி மேம்படுத்தலை முடக்குவது Zemzeme பின்னணியில் நம்பகமாக இயங்குவதையும் mesh நெட்வொர்க் இணைப்புகளை பராமரிப்பதையும் உறுதிசெய்கிறது. இது இல்லாமல், Android பேட்டரியை சேமிக்க பயன்பாட்டை நிறுத்தலாம்.</string>
+    <string name="perm_benefit_battery_optimization">பேட்டரி மேம்படுத்தலை முடக்குவது Axzora Chat பின்னணியில் நம்பகமாக இயங்குவதையும் mesh நெட்வொர்க் இணைப்புகளை பராமரிப்பதையும் உறுதிசெய்கிறது. இது இல்லாமல், Android பேட்டரியை சேமிக்க பயன்பாட்டை நிறுத்தலாம்.</string>
 
     <!-- Mesh அறிமுகம் -->
     <string name="mesh_intro_title">Bluetooth</string>
@@ -589,7 +589,7 @@
     <!-- P2P அமைப்புகள் -->
     <string name="p2p_settings_header">அமைப்புகள்</string>
     <string name="p2p_enable">P2P இயக்கு</string>
-    <string name="p2p_enable_desc">மற்ற Zemzeme peerகளுடன் நேரடியாக இணை</string>
+    <string name="p2p_enable_desc">மற்ற Axzora Chat peerகளுடன் நேரடியாக இணை</string>
     <string name="p2p_use_default_nodes">இயல்புநிலை நோட்கள் பயன்படுத்து</string>
     <string name="p2p_default_nodes_desc">பொது IPFS bootstrap நோட்களுடன் இணை</string>
     <string name="p2p_custom_nodes_header">தனிப்பயன் BOOTSTRAP நோட்கள்</string>

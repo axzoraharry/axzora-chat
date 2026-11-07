@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App core -->
-    <string name="app_name">Zemzeme</string>
+    <string name="app_name">Axzora Chat</string>
     <string name="permission_bluetooth_rationale">Uprawnienie Bluetooth jest wymagane do komunikacji peer-to-peer bez internetu.</string>
     <string name="permission_location_rationale">Uprawnienie lokalizacji jest wymagane do wykrywania pobliskich urządzeń przez Bluetooth.</string>
     <string name="permission_notification_rationale">Uprawnienie powiadomień jest wymagane do informowania o nowych wiadomościach.</string>
@@ -26,12 +26,12 @@
     <string name="battery_optimization_not_required">Optymalizacja baterii nie jest wymagana</string>
     <string name="battery_optimization_checking">Sprawdzanie optymalizacji baterii</string>
     <string name="battery_optimization_why_disable">Dlaczego wyłączyć optymalizację baterii?</string>
-    <string name="battery_optimization_explanation">Zemzeme działa w tle, aby utrzymywać połączenia z siecią mesh z pobliskimi urządzeniami. Optymalizacja baterii może przerywać te połączenia, powodując opóźnienia lub utratę wiadomości.\n\nWyłączenie optymalizacji baterii zapewnia niezawodną komunikację peer-to-peer.</string>
+    <string name="battery_optimization_explanation">Axzora Chat działa w tle, aby utrzymywać połączenia z siecią mesh z pobliskimi urządzeniami. Optymalizacja baterii może przerywać te połączenia, powodując opóźnienia lub utratę wiadomości.\n\nWyłączenie optymalizacji baterii zapewnia niezawodną komunikację peer-to-peer.</string>
     <string name="battery_optimization_disable_button">Wyłącz optymalizację baterii</string>
-    <string name="battery_optimization_note">Uwaga: możesz zmienić to ustawienie później w Ustawienia Androida &gt; Aplikacje &gt; Zemzeme &gt; Bateria</string>
-    <string name="battery_optimization_not_supported_explanation">Twoje urządzenie nie wymaga ustawień optymalizacji baterii. Zemzeme będzie działać normalnie.</string>
-    <string name="battery_optimization_not_supported_message">Twoje urządzenie nie wymaga ustawień optymalizacji baterii. Zemzeme będzie działać normalnie.</string>
-    <string name="battery_optimization_success_message">Zemzeme może działać niezawodnie w tle</string>
+    <string name="battery_optimization_note">Uwaga: możesz zmienić to ustawienie później w Ustawienia Androida &gt; Aplikacje &gt; Axzora Chat &gt; Bateria</string>
+    <string name="battery_optimization_not_supported_explanation">Twoje urządzenie nie wymaga ustawień optymalizacji baterii. Axzora Chat będzie działać normalnie.</string>
+    <string name="battery_optimization_not_supported_message">Twoje urządzenie nie wymaga ustawień optymalizacji baterii. Axzora Chat będzie działać normalnie.</string>
+    <string name="battery_optimization_success_message">Axzora Chat może działać niezawodnie w tle</string>
     <string name="battery_optimization_benefits">• Zapewnia niezawodne dostarczanie wiadomości\n• Utrzymuje połączenie z siecią mesh\n• Umożliwia przekazywanie wiadomości w tle\n• Zapobiega zrywaniu połączeń</string>
     <string name="battery_optimization_check_again">Sprawdź ponownie</string>
     <string name="battery_optimization_skip">Pomiń na razie</string>
@@ -43,7 +43,7 @@
     <string name="notification_summary_more">i %1$d więcej</string>
     <string name="notification_messages_from_people">%1$d wiadomości od %2$d osób</string>
     <string name="notification_more_conversations">i %1$d więcej rozmów</string>
-    <string name="notification_active_peers_title">👥 użytkownicy Zemzeme w pobliżu!</string>
+    <string name="notification_active_peers_title">👥 użytkownicy Axzora Chat w pobliżu!</string>
     <string name="notification_active_peers_one">1 osoba w pobliżu</string>
     <string name="notification_active_peers_many">%1$d osób w pobliżu</string>
     <string name="notification_new_messages">Nowe wiadomości</string>
@@ -54,8 +54,8 @@
     <string name="notification_new_activity_in">Nowa aktywność w %1$s</string>
     <string name="notification_messages_in">Wiadomości w %1$s</string>
     <string name="notification_joined_conversation">%1$s dołączył do rozmowy</string>
-    <string name="notification_geohash_summary_title_mentions">Zemzeme - %1$d wzmianek</string>
-    <string name="notification_geohash_summary_title">Zemzeme - czaty lokalizacyjne</string>
+    <string name="notification_geohash_summary_title_mentions">Axzora Chat - %1$d wzmianek</string>
+    <string name="notification_geohash_summary_title">Axzora Chat - czaty lokalizacyjne</string>
     <string name="notification_geohash_summary_text">%1$d wiadomości z %2$d lokalizacji</string>
     <string name="notification_mesh_mention_title_singular">Wspomniano w czacie Bluetooth</string>
     <string name="notification_mesh_mention_title_plural">%1$d wzmianek w czacie Mesh</string>
@@ -158,7 +158,7 @@
     <string name="cd_remove_bookmark">Usuń zakładkę</string>
     <string name="cd_teleport">Teleportuj</string>
     <string name="cd_selected">Wybrano</string>
-    <string name="notification_action_quit_bitchat">Zamknij Zemzeme</string>
+    <string name="notification_action_quit_bitchat">Zamknij Axzora Chat</string>
     <string name="about_background_title">działaj w tle</string>
     <string name="about_background_desc">utrzymuj sieć mesh aktywną, gdy aplikacja jest zamknięta (usługa pierwszoplanowa)</string>
     <string name="about_p2p_subtitle">Bezpośrednie połączenia przez p2p</string>
@@ -290,14 +290,14 @@
     <!-- Onboarding -->
     <string name="location_services_required">Wymagane usługi lokalizacyjne</string>
     <string name="privacy_first">Prywatność przede wszystkim</string>
-    <string name="location_explanation">Zemzeme NIE śledzi Twojej lokalizacji.\n\nUsługi lokalizacyjne są wymagane do skanowania Bluetooth oraz funkcji czatu Geohash.</string>
-    <string name="location_needs_for">Zemzeme potrzebuje usług lokalizacyjnych do:</string>
+    <string name="location_explanation">Axzora Chat NIE śledzi Twojej lokalizacji.\n\nUsługi lokalizacyjne są wymagane do skanowania Bluetooth oraz funkcji czatu Geohash.</string>
+    <string name="location_needs_for">Axzora Chat potrzebuje usług lokalizacyjnych do:</string>
     <string name="location_needs_bullets">• Skanowania urządzeń przez Bluetooth\n• Odkrywania pobliskich użytkowników w sieci mesh\n• Funkcji czatu Geohash\n• Brak śledzenia ani zbierania lokalizacji</string>
     <string name="background_location_required_title">Lokalizacja w tle zalecana</string>
     <string name="background_location_required_subtitle">opcjonalna, poprawia niezawodność sieci mesh</string>
-    <string name="background_location_explanation">Android zaleca dostęp do lokalizacji w tle, aby Zemzeme mogła skanować pobliskie urządzenia, gdy aplikacja nie jest otwarta. Dzięki temu sieć mesh pozostaje aktywna po ponownym uruchomieniu.</string>
+    <string name="background_location_explanation">Android zaleca dostęp do lokalizacji w tle, aby Axzora Chat mogła skanować pobliskie urządzenia, gdy aplikacja nie jest otwarta. Dzięki temu sieć mesh pozostaje aktywna po ponownym uruchomieniu.</string>
     <string name="background_location_settings_tip">Po otwarciu ustawień wybierz „Zezwalaj przez cały czas".</string>
-    <string name="background_location_needs_for">Zemzeme używa lokalizacji w tle do:</string>
+    <string name="background_location_needs_for">Axzora Chat używa lokalizacji w tle do:</string>
     <string name="background_location_needs_bullets">- skanowania pobliskich urządzeń, gdy aplikacja jest zamknięta\n- ponownego łączenia po restarcie\n- utrzymywania sieci mesh w tle</string>
     <string name="background_location_privacy_note">NIGDY nie zbieramy ani nie przechowujemy Twojej lokalizacji. Twoja prywatność jest bezpieczna.</string>
     <string name="grant_background_location">Zezwól na lokalizację w tle</string>
@@ -305,18 +305,18 @@
     <string name="open_location_settings">Otwórz ustawienia lokalizacji</string>
     <string name="check_again">Sprawdź ponownie</string>
     <string name="location_services_unavailable">Usługi lokalizacyjne niedostępne</string>
-    <string name="location_unavailable_explanation">Usługi lokalizacyjne nie są dostępne na tym urządzeniu. Jest to niezwykłe, ponieważ usługi lokalizacyjne są standardem na urządzeniach z Androidem.\n\nZemzeme potrzebuje usług lokalizacyjnych, aby skanowanie Bluetooth działało poprawnie (wymóg Androida). Bez tego aplikacja nie może wykrywać pobliskich użytkowników.</string>
+    <string name="location_unavailable_explanation">Usługi lokalizacyjne nie są dostępne na tym urządzeniu. Jest to niezwykłe, ponieważ usługi lokalizacyjne są standardem na urządzeniach z Androidem.\n\nAxzora Chat potrzebuje usług lokalizacyjnych, aby skanowanie Bluetooth działało poprawnie (wymóg Androida). Bez tego aplikacja nie może wykrywać pobliskich użytkowników.</string>
     <string name="checking_location_services">Sprawdzanie usług lokalizacyjnych...</string>
     <string name="bluetooth_required">Bluetooth wymagany</string>
-    <string name="bluetooth_needs_for">Zemzeme potrzebuje Bluetooth do:</string>
+    <string name="bluetooth_needs_for">Axzora Chat potrzebuje Bluetooth do:</string>
     <string name="bluetooth_needs_bullets">• Wykrywania pobliskich użytkowników\n• Tworzenia połączeń sieciowych mesh\n• Wysyłania i odbierania wiadomości\n• Działania bez internetu i serwerów</string>
     <string name="enable_bluetooth">Włącz Bluetooth</string>
     <string name="bluetooth_not_supported">Bluetooth nieobsługiwany</string>
-    <string name="bluetooth_unsupported_explanation">To urządzenie nie obsługuje Bluetooth Low Energy (BLE), które jest wymagane do działania Zemzeme.\n\nZemzeme potrzebuje BLE do tworzenia sieci mesh i komunikacji z pobliskimi urządzeniami bez internetu.</string>
+    <string name="bluetooth_unsupported_explanation">To urządzenie nie obsługuje Bluetooth Low Energy (BLE), które jest wymagane do działania Axzora Chat.\n\nAxzora Chat potrzebuje BLE do tworzenia sieci mesh i komunikacji z pobliskimi urządzeniami bez internetu.</string>
     <string name="checking_bluetooth_status">Sprawdzanie stanu Bluetooth...</string>
     <string name="battery_optimization_detected_title">wykryto optymalizację baterii</string>
     <string name="battery_optimization_enabled_title">Optymalizacja baterii włączona</string>
-    <string name="battery_optimization_explanation_short">Zemzeme musi działać w tle, aby utrzymywać połączenia mesh. Optymalizacja baterii może przerywać te połączenia.</string>
+    <string name="battery_optimization_explanation_short">Axzora Chat musi działać w tle, aby utrzymywać połączenia mesh. Optymalizacja baterii może przerywać te połączenia.</string>
     <string name="benefits_of_disabling">Korzyści z wyłączenia</string>
     <string name="battery_benefits_short">• niezawodne dostarczanie wiadomości\n• utrzymuje połączenie mesh\n• zapobiega zrywaniu połączeń</string>
     <string name="disable_battery_optimization">Wyłącz optymalizację baterii</string>
@@ -338,14 +338,14 @@
     <string name="perm_required_label">Wymagane</string>
     <string name="perm_recommended_label">Zalecane</string>
     <string name="perm_info_dialog_ok">OK</string>
-    <string name="perm_benefit_nearby_devices">Uprawnienia Bluetooth pozwalają Zemzeme odkrywać i komunikować się z innymi użytkownikami w pobliżu przez sieć mesh. Umożliwia to w pełni offline komunikację peer-to-peer bez połączenia z internetem.</string>
-    <string name="perm_benefit_location">Android wymaga uprawnienia lokalizacji do skanowania pobliskich urządzeń Bluetooth. Zemzeme NIE śledzi ani nie przechowuje Twojej lokalizacji.</string>
-    <string name="perm_benefit_background_location">Lokalizacja w tle umożliwia Zemzeme wykrywanie pobliskich użytkowników nawet gdy aplikacja działa w tle. Bez tego sieć mesh działa tylko gdy aplikacja jest otwarta na ekranie.</string>
+    <string name="perm_benefit_nearby_devices">Uprawnienia Bluetooth pozwalają Axzora Chat odkrywać i komunikować się z innymi użytkownikami w pobliżu przez sieć mesh. Umożliwia to w pełni offline komunikację peer-to-peer bez połączenia z internetem.</string>
+    <string name="perm_benefit_location">Android wymaga uprawnienia lokalizacji do skanowania pobliskich urządzeń Bluetooth. Axzora Chat NIE śledzi ani nie przechowuje Twojej lokalizacji.</string>
+    <string name="perm_benefit_background_location">Lokalizacja w tle umożliwia Axzora Chat wykrywanie pobliskich użytkowników nawet gdy aplikacja działa w tle. Bez tego sieć mesh działa tylko gdy aplikacja jest otwarta na ekranie.</string>
     <string name="perm_benefit_notifications">Powiadomienia informują, gdy otrzymasz wiadomość prywatną lub gdy pojawi się nowa aktywność w Twoich kanałach, nawet gdy aplikacja działa w tle.</string>
-    <string name="perm_benefit_battery_optimization">Wyłączenie optymalizacji baterii zapewnia niezawodne działanie Zemzeme w tle, utrzymując połączenia sieciowe mesh. Bez tego Android może zamknąć aplikację w celu oszczędzania baterii, odłączając Cię od sieci mesh.</string>
-    <string name="location_tracking_warning">Zemzeme NIE śledzi Twojej lokalizacji</string>
+    <string name="perm_benefit_battery_optimization">Wyłączenie optymalizacji baterii zapewnia niezawodne działanie Axzora Chat w tle, utrzymując połączenia sieciowe mesh. Bez tego Android może zamknąć aplikację w celu oszczędzania baterii, odłączając Cię od sieci mesh.</string>
+    <string name="location_tracking_warning">Axzora Chat NIE śledzi Twojej lokalizacji</string>
     <string name="at_symbol">@</string>
-    <string name="app_brand">Zemzeme/</string>
+    <string name="app_brand">Axzora Chat/</string>
     <string name="channel_count_prefix"> · ⧉ </string>
     <string name="geohash_people_header">OSOBY</string>
     <string name="nobody_around">nikogo w pobliżu...</string>
@@ -392,16 +392,16 @@
     <string name="cd_pause_voice">Wstrzymaj</string>
 
     <!-- Permission descriptions -->
-    <string name="perm_nearby_devices_desc">Wymagane do wykrywania użytkowników Zemzeme przez Bluetooth</string>
-    <string name="perm_nearby_devices_system">Zezwól Zemzeme na łączenie się z pobliskimi urządzeniami</string>
-    <string name="perm_location_desc">Wymagane przez Androida do wykrywania pobliskich użytkowników Zemzeme przez Bluetooth</string>
-    <string name="perm_location_system">Zemzeme potrzebuje tego do skanowania pobliskich urządzeń</string>
+    <string name="perm_nearby_devices_desc">Wymagane do wykrywania użytkowników Axzora Chat przez Bluetooth</string>
+    <string name="perm_nearby_devices_system">Zezwól Axzora Chat na łączenie się z pobliskimi urządzeniami</string>
+    <string name="perm_location_desc">Wymagane przez Androida do wykrywania pobliskich użytkowników Axzora Chat przez Bluetooth</string>
+    <string name="perm_location_system">Axzora Chat potrzebuje tego do skanowania pobliskich urządzeń</string>
     <string name="perm_background_location_desc">Zalecane do skanowania pobliskich urządzeń, gdy aplikacja działa w tle</string>
     <string name="perm_background_location_system">Zezwól na dostęp do lokalizacji w tle</string>
     <string name="perm_notifications_desc">Otrzymuj powiadomienia o nowych wiadomościach prywatnych</string>
-    <string name="perm_notifications_system">Zezwól Zemzeme na wysyłanie powiadomień</string>
-    <string name="perm_battery_desc">Wyłącz optymalizację baterii, aby Zemzeme działała niezawodnie w tle i utrzymywała połączenia z siecią mesh</string>
-    <string name="perm_battery_system">Zezwól Zemzeme na działanie bez ograniczeń baterii</string>
+    <string name="perm_notifications_system">Zezwól Axzora Chat na wysyłanie powiadomień</string>
+    <string name="perm_battery_desc">Wyłącz optymalizację baterii, aby Axzora Chat działała niezawodnie w tle i utrzymywała połączenia z siecią mesh</string>
+    <string name="perm_battery_system">Zezwól Axzora Chat na działanie bez ograniczeń baterii</string>
 
     <!-- Permission types -->
     <string name="perm_type_nearby_devices">Pobliskie urządzenia</string>
@@ -420,7 +420,7 @@
   <string name="app_lock_enter_pin">Wprowadź PIN</string>
   <string name="app_lock_set_pin">Ustaw PIN</string>
   <string name="app_lock_confirm_pin">Potwierdź PIN</string>
-  <string name="app_lock_biometric_title">Odblokuj Zemzeme</string>
+  <string name="app_lock_biometric_title">Odblokuj Axzora Chat</string>
   <string name="app_lock_biometric_subtitle">Dotknij czujnika, aby odblokować</string>
   <string name="app_lock_use_pin">Użyj PIN</string>
   <string name="app_lock_wrong_pin">Nieprawidłowy PIN</string>
@@ -590,7 +590,7 @@
     <!-- P2P Settings -->
     <string name="p2p_settings_header">USTAWIENIA</string>
     <string name="p2p_enable">Włącz P2P</string>
-    <string name="p2p_enable_desc">Połącz się bezpośrednio z innymi peerami Zemzeme</string>
+    <string name="p2p_enable_desc">Połącz się bezpośrednio z innymi peerami Axzora Chat</string>
     <string name="p2p_use_default_nodes">Użyj domyślnych węzłów</string>
     <string name="p2p_default_nodes_desc">Połącz z publicznymi węzłami bootstrap IPFS</string>
     <string name="p2p_custom_nodes_header">NIESTANDARDOWE WĘZŁY BOOTSTRAP</string>
