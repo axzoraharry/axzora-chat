@@ -65,6 +65,8 @@ android {
             if (hasReleaseSigning) {
                 signingConfig = signingConfigs.getByName("release")
             }
+            // NOTE: on-phone builds can flip these off to dodge R8 OOM under Android LMK
+            // pressure (see UPGRADE-ASSESSMENT.md). Default = minify ON for a proper release.
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(

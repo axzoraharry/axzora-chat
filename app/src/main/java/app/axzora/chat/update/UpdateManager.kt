@@ -57,6 +57,7 @@ data class UpdateInfo(
     val apkUrl: String,
     val releaseNotes: String,
     val forceUpdate: Boolean,
+    val sha256: String = "",
     val source: UpdateSource = UpdateSource.GITHUB
 )
 
@@ -71,6 +72,7 @@ class UpdateManager private constructor(private val context: Context) {
         private const val PREF_CACHED_VERSION_CODE = "cached_version_code"
         private const val PREF_CACHED_VERSION_NAME = "cached_version_name"
         private const val PREF_LAST_CHECK_TIME = "last_check_time"
+        private const val PREF_CUSTOM_FEED_URL = "custom_feed_url"
 
         @Volatile
         private var INSTANCE: UpdateManager? = null
@@ -141,7 +143,7 @@ class UpdateManager private constructor(private val context: Context) {
         if (cachedPath != null && cachedVersionCode > 0 && cachedVersionName != null) {
             val apkFile = File(cachedPath)
             if (apkFile.exists() && apkFile.length() > 0 && cachedVersionCode > getCurrentVersionCode()) {
-                val info = UpdateInfo(cachedVersionCode, cachedVersionName, "", "", false, UpdateSource.GITHUB)
+                val info = UpdateInfo(cachedVersionCode, cachedVersionName, "", "", false, source = UpdateSource.GITHUB)
                 currentUpdateInfo = info
                 _updateState.value = UpdateState.ReadyToInstall(info, cachedPath)
                 return
@@ -200,20 +202,20 @@ class UpdateManager private constructor(private val context: Context) {
                 return
             }
 
-            val githubUpdate = fetchGitHubVersionInfo()
-            if (githubUpdate == null) {
+            val latest = fetchLatestUpdate()
+            if (latest == null) {
                 _updateState.value = UpdateState.Idle
                 return
             }
 
-            if (githubUpdate.versionCode <= getCurrentVersionCode()) {
+            if (latest.versionCode <= getCurrentVersionCode()) {
                 _updateState.value = UpdateState.Idle
                 return
             }
 
-            currentUpdateInfo = githubUpdate
-            _updateState.value = UpdateState.Available(githubUpdate)
-            downloadUpdate(githubUpdate)
+            currentUpdateInfo = latest
+            _updateState.value = UpdateState.Available(latest)
+            downloadUpdate(latest)
 
         } catch (e: Exception) {
             Log.e(TAG, "Update check failed", e)
@@ -227,7 +229,7 @@ class UpdateManager private constructor(private val context: Context) {
                 .addOnSuccessListener { info: AppUpdateInfo ->
                     if (info.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE &&
                         info.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE)) {
-                        continuation.resume(UpdateInfo(info.availableVersionCode(), "Play Store Update", "", "", false, UpdateSource.PLAY_STORE))
+                        continuation.resume(UpdateInfo(info.availableVersionCode(), "Play Store Update", "", "", false, source = UpdateSource.PLAY_STORE))
                     } else {
                         continuation.resume(null)
                     }
@@ -235,6 +237,46 @@ class UpdateManager private constructor(private val context: Context) {
                 .addOnFailureListener { continuation.resume(null) }
         } catch (e: Exception) {
             continuation.resume(null)
+        }
+    }
+
+    /**
+     * Resolution order: custom self-hosted JSON feed (if configured) → GitHub Releases.
+     * The custom feed is the path that works with a private repo / LAN / NAS host.
+     */
+    private suspend fun fetchLatestUpdate(): UpdateInfo? {
+        val customUrl = getCustomFeedUrl()
+        if (customUrl.isNotBlank()) {
+            val custom = fetchFromCustomFeed(customUrl)
+            if (custom != null) return custom
+        }
+        return fetchGitHubVersionInfo()
+    }
+
+    private suspend fun fetchFromCustomFeed(url: String): UpdateInfo? = withContext(Dispatchers.IO) {
+        val request = Request.Builder()
+            .url(url)
+            .header("Accept", "application/json")
+            .header("User-Agent", "Axzora-Chat/${getCurrentVersionName()}")
+            .build()
+
+        try {
+            httpClient.newCall(request).execute().use { response ->
+                if (!response.isSuccessful) return@withContext null
+                val body = response.body?.string() ?: return@withContext null
+                val json = JSONObject(body)
+                val versionCode = json.optInt("versionCode", 0)
+                val versionName = json.optString("versionName", "")
+                val apkUrl = json.optString("apkUrl", "")
+                val sha256 = json.optString("sha256", "").lowercase()
+                val releaseNotes = json.optString("releaseNotes", "")
+                val forceUpdate = json.optBoolean("forceUpdate", false)
+                if (versionCode <= 0 || apkUrl.isBlank()) return@withContext null
+                UpdateInfo(versionCode, versionName, apkUrl, releaseNotes, forceUpdate, sha256, UpdateSource.GITHUB)
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to fetch custom update feed", e)
+            null
         }
     }
 
@@ -257,8 +299,10 @@ class UpdateManager private constructor(private val context: Context) {
                 val assets = json.getJSONArray("assets")
                 val apkUrl = findBestApkUrl(assets) ?: return@withContext null
                 val versionCode = parseSemanticVersionCode(tagName)
+                // Optional integrity hint: a line "sha256: <64-hex>" (or "sha256 = <hex>") in the release body.
+                val sha256 = Regex("(?i)sha256\\s*[:=]\\s*([0-9a-f]{64})").find(releaseNotes)?.groupValues?.get(1)?.lowercase() ?: ""
 
-                UpdateInfo(versionCode, tagName.removePrefix("v"), apkUrl, releaseNotes, false, UpdateSource.GITHUB)
+                UpdateInfo(versionCode, tagName.removePrefix("v"), apkUrl, releaseNotes, false, sha256, UpdateSource.GITHUB)
             }
         } catch (e: Exception) {
             Log.e(TAG, "Failed to fetch GitHub release", e)
@@ -309,6 +353,24 @@ class UpdateManager private constructor(private val context: Context) {
 
                 val apkFile = downloadApk(info.apkUrl) { progress ->
                     _updateState.value = UpdateState.Downloading(progress, info)
+                }
+
+                // Integrity gate: never hand an unverified APK to the installer when the
+                // feed declares a sha256. Mismatch → delete the file and fail closed.
+                if (info.sha256.isNotBlank()) {
+                    val actual = sha256Of(apkFile)
+                    if (actual.isBlank() || !actual.equals(info.sha256, ignoreCase = true)) {
+                        apkFile.delete()
+                        prefs.edit()
+                            .remove(PREF_CACHED_APK_PATH)
+                            .remove(PREF_CACHED_VERSION_CODE)
+                            .remove(PREF_CACHED_VERSION_NAME)
+                            .apply()
+                        val exp = info.sha256.take(12)
+                        val got = if (actual.isBlank()) "(unreadable)" else actual.take(12)
+                        _updateState.value = UpdateState.Error("Checksum mismatch: expected $exp…, got $got…")
+                        return@launch
+                    }
                 }
 
                 prefs.edit()
@@ -494,6 +556,31 @@ class UpdateManager private constructor(private val context: Context) {
                 _updateState.value = UpdateState.Error(message ?: "Installation failed (status: $status)")
             }
         }
+    }
+
+    private fun sha256Of(file: File): String {
+        return try {
+            val digest = java.security.MessageDigest.getInstance("SHA-256")
+            file.inputStream().use { input ->
+                val buffer = ByteArray(8192)
+                var read: Int
+                while (input.read(buffer).also { read = it } != -1) {
+                    if (read > 0) digest.update(buffer, 0, read)
+                }
+            }
+            digest.digest().joinToString("") { "%02x".format(it) }
+        } catch (e: Exception) {
+            Log.e(TAG, "sha256 computation failed", e)
+            ""
+        }
+    }
+
+    fun getCustomFeedUrl(): String = prefs.getString(PREF_CUSTOM_FEED_URL, "") ?: ""
+
+    fun setCustomFeedUrl(url: String) {
+        val cleaned = url.trim().ifBlank { "" }
+        prefs.edit().putString(PREF_CUSTOM_FEED_URL, cleaned).apply()
+        Log.i(TAG, if (cleaned.isBlank()) "Custom update feed cleared" else "Custom update feed set to $cleaned")
     }
 
     private fun clearCachedApk() {

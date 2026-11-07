@@ -10,6 +10,7 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.Alignment
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.*
@@ -43,6 +44,8 @@ import app.axzora.chat.ui.ChatViewModel
 import app.axzora.chat.ui.HomeScreen
 import app.axzora.chat.ui.OrientationAwareActivity
 import app.axzora.chat.ui.theme.ZemzemeTheme
+import app.axzora.chat.update.UpdateBanner
+import app.axzora.chat.update.UpdateManager
 import androidx.activity.compose.BackHandler
 import app.axzora.chat.nostr.PoWPreferenceManager
 import app.axzora.chat.security.AppLockManager
@@ -163,6 +166,9 @@ class MainActivity : OrientationAwareActivity() {
             onOnboardingFailed = ::handleOnboardingFailed
         )
         
+        // Start the self-updater on launch so OTA checks run without opening Debug Settings.
+        UpdateManager.getInstance(this).checkForUpdate()
+
         setContent {
             val isLocked by AppLockManager.isLocked.collectAsState()
             val currentOnboardingState by mainViewModel.onboardingState.collectAsState()
@@ -173,6 +179,8 @@ class MainActivity : OrientationAwareActivity() {
                     containerColor = MaterialTheme.colorScheme.background
                 ) { innerPadding ->
                     Box(modifier = Modifier.fillMaxSize()) {
+                        // OTA banner overlays the top edge; invisible while idle.
+                        UpdateBanner(modifier = Modifier.align(Alignment.TopCenter))
                         // Only render chat content when not locked — prevents flash of content
                         if (!isLocked || currentOnboardingState != OnboardingState.COMPLETE) {
                             OnboardingFlowScreen(modifier = Modifier

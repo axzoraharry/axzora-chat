@@ -161,10 +161,18 @@ object AppConstants {
         const val READ_TIMEOUT_SECONDS = 300L             // 5 min for large APK
         const val WRITE_TIMEOUT_SECONDS = 60L
 
-        // GitHub Releases API
+        // GitHub Releases API (public repos only — the updater sends no token,
+        // so a private repo returns 404 and the check falls through).
         const val GITHUB_OWNER = "axzoraharry"
         const val GITHUB_REPO = "axzora-chat"
         const val GITHUB_API_URL = "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/releases/latest"
+
+        // Self-hosted JSON feed. Works with a PRIVATE repo / offline LAN / NAS.
+        // Empty = disabled (fall back to GitHub). Set at runtime via UpdateManager.
+        // Feed shape:
+        //   {"versionCode":10016,"versionName":"1.0.16","apkUrl":"http://host/axzora-chat.apk",
+        //    "sha256":"<64-hex>","releaseNotes":"...","forceUpdate":false}
+        const val DEFAULT_CUSTOM_FEED_URL = ""
 
         // APK naming patterns for architecture detection
         const val APK_ARM64_PATTERN = "arm64-v8a"

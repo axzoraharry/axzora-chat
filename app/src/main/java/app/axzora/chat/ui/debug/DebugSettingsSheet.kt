@@ -243,6 +243,27 @@ fun DebugSettingsSheet(
                         Text(stringResource(R.string.debug_current_version_fmt, versionInfo), fontFamily = NunitoFontFamily, fontSize = 12.sp, fontWeight = FontWeight.Medium, color = Color(0xFF5AC8FA))
                         Text(stringResource(R.string.debug_download_updates_desc), fontFamily = NunitoFontFamily, fontSize = 11.sp, color = colorScheme.onSurface.copy(alpha = 0.7f))
 
+                        // Custom (self-hosted) update feed — works with a private repo / LAN / NAS.
+                        var feedUrl by remember { mutableStateOf(updateManager.getCustomFeedUrl()) }
+                        OutlinedTextField(
+                            value = feedUrl,
+                            onValueChange = { feedUrl = it },
+                            modifier = Modifier.fillMaxWidth(),
+                            label = { Text("Update feed URL (optional)", fontFamily = NunitoFontFamily, fontSize = 11.sp) },
+                            placeholder = { Text("http://host/update.json", fontFamily = NunitoFontFamily, fontSize = 11.sp) },
+                            singleLine = true
+                        )
+                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            OutlinedButton(
+                                onClick = { updateManager.setCustomFeedUrl(feedUrl); updateManager.checkForUpdate() },
+                                modifier = Modifier.weight(1f)
+                            ) { Text("Apply feed", fontFamily = NunitoFontFamily, fontSize = 11.sp) }
+                            OutlinedButton(
+                                onClick = { feedUrl = ""; updateManager.setCustomFeedUrl(""); updateManager.checkForUpdate() },
+                                modifier = Modifier.weight(1f)
+                            ) { Text("Use GitHub", fontFamily = NunitoFontFamily, fontSize = 11.sp) }
+                        }
+
                         val statusText = when (val s = updateState) {
                             is UpdateState.Idle -> stringResource(R.string.update_status_ready)
                             is UpdateState.Checking -> stringResource(R.string.update_status_checking)
